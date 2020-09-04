@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name MyLib)(type KiCad)(uri C:/tools/kicad-library/trunk/MyLib.pretty)(options "")(descr ""))
+)
