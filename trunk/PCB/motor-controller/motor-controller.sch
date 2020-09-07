@@ -612,13 +612,13 @@ Text Label 8000 3350 2    50   ~ 0
 OSC2
 $Comp
 L 74xx:74LS08 U8
-U 4 1 5F7672E7
+U 1 1 5F7672E7
 P 9700 2800
 F 0 "U8" H 9700 3125 50  0000 C CNN
 F 1 "74HC08" H 9700 3034 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 9700 2800 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 9700 2800 50  0001 C CNN
-	4    9700 2800
+	1    9700 2800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -634,24 +634,24 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 9000 270
 $EndComp
 $Comp
 L 74xx:74LS08 U8
-U 1 1 5F7672FB
+U 4 1 5F7672FB
 P 9700 3600
 F 0 "U8" H 9700 3925 50  0000 C CNN
 F 1 "74HC08" H 9700 3834 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 9700 3600 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 9700 3600 50  0001 C CNN
-	1    9700 3600
+	4    9700 3600
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74LS08 U8
-U 2 1 5F767305
+U 3 1 5F767305
 P 10300 3200
 F 0 "U8" H 10300 3525 50  0000 C CNN
 F 1 "74HC08" H 10300 3434 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 10300 3200 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 10300 3200 50  0001 C CNN
-	2    10300 3200
+	3    10300 3200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -667,13 +667,13 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 12300 29
 $EndComp
 $Comp
 L 74xx:74LS08 U8
-U 3 1 5F767319
+U 2 1 5F767319
 P 11700 3300
 F 0 "U8" H 11700 3625 50  0000 C CNN
 F 1 "74HC08" H 11700 3534 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 11700 3300 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 11700 3300 50  0001 C CNN
-	3    11700 3300
+	2    11700 3300
 	1    0    0    -1  
 $EndComp
 $Comp
