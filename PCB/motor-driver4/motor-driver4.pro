@@ -1,4 +1,4 @@
-update=2020/09/22 11:50:18
+update=2021/07/26 11:31:37
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=motor-driver3.net
+LastNetListRead=motor-driver4.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
@@ -67,7 +67,7 @@ OthersTextUpright=1
 SolderMaskClearance=0.05
 SolderMaskMinWidth=0
 SolderPasteClearance=0
-SolderPasteRatio=0
+SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=0
@@ -252,6 +252,17 @@ Clearance=0.3
 TrackWidth=1
 ViaDiameter=1.5
 ViaDrill=0.8
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/2]
+Name=Input
+Clearance=0.3
+TrackWidth=0.5
+ViaDiameter=1
+ViaDrill=0.6
 uViaDiameter=0.3
 uViaDrill=0.1
 dPairWidth=0.2
