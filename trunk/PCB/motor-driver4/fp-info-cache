@@ -1,4 +1,4 @@
-18740107521368204
+18773555646152354
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -58044,6 +58044,13 @@ MyLib
 5
 5
 MyLib
+50101-BS
+
+
+0
+10
+10
+MyLib
 AE-AQM0802
 
 
@@ -58078,6 +58085,20 @@ AE-HDC1000_V
 0
 5
 5
+MyLib
+AE-MICAMP
+
+
+0
+3
+3
+MyLib
+AE-S11059
+
+
+0
+4
+4
 MyLib
 AE-SHT31_Angled-FemaleThinSocket_SMD
 
@@ -58121,6 +58142,13 @@ Battery CR2032
 3
 2
 MyLib
+BH-311-1P24
+
+
+0
+2
+2
+MyLib
 BH-321-1P24
 
 
@@ -58142,6 +58170,13 @@ C2
 2
 2
 MyLib
+CH25-2032LF
+coin cell holder CR2032
+coin cell holder CR2032
+0
+2
+2
+MyLib
 CP_Radial_Angled_D10_L9_P5.0
 
 
@@ -58155,6 +58190,13 @@ CP_Radial_Angled_D12.5_L20_P5.0
 0
 2
 2
+MyLib
+DHT11_H-Mount
+
+
+0
+4
+4
 MyLib
 DIP-18_W12.7mm
 18-lead dip package, row spacing 12.7 mm (500 mils)
@@ -58219,12 +58261,40 @@ GF063P1
 3
 3
 MyLib
+HC-SR04_H
+
+
+0
+6
+4
+MyLib
+HC-SR04_V
+
+
+0
+4
+4
+MyLib
 HRD05003
 
 
 0
 9
 9
+MyLib
+HeatSink_11PB015
+
+
+0
+1
+1
+MyLib
+Houkem-80011-BSR
+
+
+0
+10
+10
 MyLib
 IS-2235
 
@@ -58254,6 +58324,13 @@ LED led 0603 SMD smd SMT smt smdled SMDLED smtled SMTLED
 2
 2
 MyLib
+MH-Z19C
+
+
+0
+9
+9
+MyLib
 MiniSlideSwitch
 Through hole pin header
 pin header
@@ -58275,6 +58352,27 @@ NSDW570GS-K1_h
 2
 2
 MyLib
+NxSx064
+
+
+0
+2
+2
+MyLib
+NxSx064_45deg
+
+
+0
+2
+2
+MyLib
+NxSx064_45deg_A
+
+
+0
+2
+2
+MyLib
 OSL641501-BRA
 
 
@@ -58283,6 +58381,13 @@ OSL641501-BRA
 16
 MyLib
 PKM13EPYH4000-A0
+
+
+0
+2
+2
+MyLib
+PWN10EB12CB
 
 
 0
@@ -58352,9 +58457,37 @@ RPi_model_B+
 40
 40
 MyLib
+S6809_Horizontal_Facedown
+
+
+0
+4
+4
+MyLib
+S6809_Vertical
+
+
+0
+4
+4
+MyLib
+S7136
+
+
+0
+4
+4
+MyLib
 SC1602
 
 
+0
+19
+16
+MyLib
+SC2004
+LCD
+LCD
 0
 19
 16
@@ -58415,6 +58548,13 @@ SOT-323_handsoldering
 3
 3
 MyLib
+SPG27
+
+
+0
+6
+6
+MyLib
 SS12D01G4
 
 
@@ -58449,6 +58589,13 @@ TA7291P
 0
 10
 10
+MyLib
+TA8428K
+
+
+0
+7
+7
 MyLib
 TAMIYA70144
 
@@ -58485,6 +58632,13 @@ TSR-3386K
 3
 3
 MyLib
+TVDP01-G73AB
+Tact Switch
+push switch tact DPST
+0
+4
+4
+MyLib
 TactSW_TVBP06_3.5x6.0-ThroughHole
 
 
@@ -58507,6 +58661,13 @@ Transistor_ECB
 3
 MyLib
 UDB-05LFPN
+
+
+0
+2
+2
+MyLib
+VBS030600
 
 
 0
