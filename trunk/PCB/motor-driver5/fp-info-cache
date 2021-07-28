@@ -1,4 +1,4 @@
-18764444742768489
+18773555646152354
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -58044,6 +58044,13 @@ MyLib
 5
 5
 MyLib
+50101-BS
+
+
+0
+10
+10
+MyLib
 AE-AQM0802
 
 
@@ -58163,6 +58170,13 @@ C2
 2
 2
 MyLib
+CH25-2032LF
+coin cell holder CR2032
+coin cell holder CR2032
+0
+2
+2
+MyLib
 CP_Radial_Angled_D10_L9_P5.0
 
 
@@ -58275,6 +58289,13 @@ HeatSink_11PB015
 1
 1
 MyLib
+Houkem-80011-BSR
+
+
+0
+10
+10
+MyLib
 IS-2235
 
 
@@ -58325,6 +58346,27 @@ NSDW570GS-K1
 2
 MyLib
 NSDW570GS-K1_h
+
+
+0
+2
+2
+MyLib
+NxSx064
+
+
+0
+2
+2
+MyLib
+NxSx064_45deg
+
+
+0
+2
+2
+MyLib
+NxSx064_45deg_A
 
 
 0
@@ -58439,6 +58481,13 @@ MyLib
 SC1602
 
 
+0
+19
+16
+MyLib
+SC2004
+LCD
+LCD
 0
 19
 16
@@ -58582,6 +58631,13 @@ TSR-3386K
 0
 3
 3
+MyLib
+TVDP01-G73AB
+Tact Switch
+push switch tact DPST
+0
+4
+4
 MyLib
 TactSW_TVBP06_3.5x6.0-ThroughHole
 
