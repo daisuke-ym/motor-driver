@@ -13,17 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L 74xx:74LS08 U2
-U 4 1 5F4C9834
-P 4300 1050
-F 0 "U2" H 4300 1375 50  0000 C CNN
-F 1 "74HC08" H 4300 1284 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 4300 1050 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 4300 1050 50  0001 C CNN
-	4    4300 1050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4000 950  3200 950 
 Wire Wire Line
@@ -48,35 +37,20 @@ Wire Wire Line
 	4600 1050 5000 1050
 Wire Wire Line
 	4600 1650 5000 1650
-Text Label 2700 950  0    50   ~ 0
+Text Label 5200 950  0    50   ~ 0
 SEL1
-Text Label 2700 1750 0    50   ~ 0
+Text Label 5200 1750 0    50   ~ 0
 PWM1IN
-Text Label 5000 1650 2    50   ~ 0
-AOUT1B
-Text Label 5000 1050 2    50   ~ 0
-AOUT1A
 $Comp
 L 74xx:74LS08 U2
 U 1 1 5F4D8AD3
-P 4300 1650
-F 0 "U2" H 4300 1975 50  0000 C CNN
-F 1 "74HC08" H 4300 1884 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 4300 1650 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 4300 1650 50  0001 C CNN
-	1    4300 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS08 U2
-U 3 1 5F4E0471
-P 4300 2250
-F 0 "U2" H 4300 2575 50  0000 C CNN
-F 1 "74HC08" H 4300 2484 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 4300 2250 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 4300 2250 50  0001 C CNN
-	3    4300 2250
-	1    0    0    -1  
+P 4300 2850
+F 0 "U2" H 4300 3175 50  0000 C CNN
+F 1 "74HC08" H 4300 3084 50  0000 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 4300 2850 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 4300 2850 50  0001 C CNN
+	1    4300 2850
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	4000 2150 3200 2150
@@ -85,8 +59,6 @@ Wire Wire Line
 Wire Wire Line
 	3200 2750 3200 2150
 Connection ~ 3200 2150
-Wire Wire Line
-	3200 2150 2700 2150
 Wire Wire Line
 	4000 2950 3100 2950
 Wire Wire Line
@@ -102,32 +74,21 @@ Wire Wire Line
 	4600 2250 5000 2250
 Wire Wire Line
 	4600 2850 5000 2850
-Text Label 2700 2150 0    50   ~ 0
+Text Label 5200 2150 0    50   ~ 0
 SEL2
-Text Label 2700 2950 0    50   ~ 0
+Text Label 5200 2950 0    50   ~ 0
 PWM2IN
-Text Label 5000 2850 2    50   ~ 0
+Text Label 7500 2850 2    50   ~ 0
 AOUT2B
-Text Label 5000 2250 2    50   ~ 0
+Text Label 7500 2250 2    50   ~ 0
 AOUT2A
-$Comp
-L 74xx:74LS08 U2
-U 2 1 5F4E048C
-P 4300 2850
-F 0 "U2" H 4300 3175 50  0000 C CNN
-F 1 "74HC08" H 4300 3084 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 4300 2850 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 4300 2850 50  0001 C CNN
-	2    4300 2850
-	1    0    0    -1  
-$EndComp
 $Comp
 L 74xx:74LS08 U3
 U 4 1 5F4EA815
 P 4300 3450
 F 0 "U3" H 4300 3775 50  0000 C CNN
 F 1 "74HC08" H 4300 3684 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 4300 3450 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 4300 3450 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 4300 3450 50  0001 C CNN
 	4    4300 3450
 	1    0    0    -1  
@@ -156,13 +117,13 @@ Wire Wire Line
 	4600 3450 5000 3450
 Wire Wire Line
 	4600 4050 5000 4050
-Text Label 2700 3350 0    50   ~ 0
+Text Label 2700 950  0    50   ~ 0
 SEL3
-Text Label 2700 4150 0    50   ~ 0
+Text Label 2700 1750 0    50   ~ 0
 PWM3IN
-Text Label 5000 4050 2    50   ~ 0
+Text Label 5000 1650 2    50   ~ 0
 AOUT3B
-Text Label 5000 3450 2    50   ~ 0
+Text Label 5000 1050 2    50   ~ 0
 AOUT3A
 $Comp
 L 74xx:74LS08 U3
@@ -170,10 +131,10 @@ U 1 1 5F4EA830
 P 4300 4050
 F 0 "U3" H 4300 4375 50  0000 C CNN
 F 1 "74HC08" H 4300 4284 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 4300 4050 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 4300 4050 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 4300 4050 50  0001 C CNN
 	1    4300 4050
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L 74xx:74LS08 U3
@@ -181,13 +142,11 @@ U 3 1 5F4EA844
 P 4300 4650
 F 0 "U3" H 4300 4975 50  0000 C CNN
 F 1 "74HC08" H 4300 4884 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 4300 4650 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 4300 4650 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 4300 4650 50  0001 C CNN
 	3    4300 4650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4000 4550 3200 4550
 Wire Wire Line
 	3300 5150 3200 5150
 Wire Wire Line
@@ -210,13 +169,13 @@ Wire Wire Line
 	4600 4650 5000 4650
 Wire Wire Line
 	4600 5250 5000 5250
-Text Label 2700 4550 0    50   ~ 0
+Text Label 2700 2150 0    50   ~ 0
 SEL4
-Text Label 2700 5350 0    50   ~ 0
+Text Label 2700 2950 0    50   ~ 0
 PWM4IN
-Text Label 5000 5250 2    50   ~ 0
+Text Label 5000 2850 2    50   ~ 0
 AOUT4B
-Text Label 5000 4650 2    50   ~ 0
+Text Label 5000 2250 2    50   ~ 0
 AOUT4A
 $Comp
 L 74xx:74LS08 U3
@@ -224,20 +183,20 @@ U 2 1 5F4EA85F
 P 4300 5250
 F 0 "U3" H 4300 5575 50  0000 C CNN
 F 1 "74HC08" H 4300 5484 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 4300 5250 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 4300 5250 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 4300 5250 50  0001 C CNN
 	2    4300 5250
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L 74xx:74HC14 U7
 U 1 1 5F51848C
-P 8550 1600
-F 0 "U7" H 8550 1917 50  0000 C CNN
-F 1 "74HC14" H 8550 1826 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 8550 1600 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 8550 1600 50  0001 C CNN
-	1    8550 1600
+P 8550 6700
+F 0 "U7" H 8550 7017 50  0000 C CNN
+F 1 "74HC14" H 8550 6926 50  0000 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 8550 6700 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 8550 6700 50  0001 C CNN
+	1    8550 6700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -257,7 +216,7 @@ U 1 1 5F51C60C
 P 8750 1100
 F 0 "RV1" H 8680 1146 50  0000 R CNN
 F 1 "R_POT" H 8680 1055 50  0000 R CNN
-F 2 "MyLib:TSR-065" H 8750 1100 50  0001 C CNN
+F 2 "MyLib:GF063P1" H 8750 1100 50  0001 C CNN
 F 3 "~" H 8750 1100 50  0001 C CNN
 	1    8750 1100
 	-1   0    0    -1  
@@ -280,7 +239,7 @@ U 1 1 5F52B0A0
 P 12300 1050
 F 0 "U9" H 12300 1375 50  0000 C CNN
 F 1 "74HC08" H 12300 1284 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 12300 1050 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 12300 1050 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 12300 1050 50  0001 C CNN
 	1    12300 1050
 	1    0    0    -1  
@@ -291,10 +250,10 @@ U 4 1 5F52DB77
 P 12300 1850
 F 0 "U9" H 12300 2175 50  0000 C CNN
 F 1 "74HC08" H 12300 2084 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 12300 1850 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 12300 1850 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 12300 1850 50  0001 C CNN
 	4    12300 1850
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L 74xx:74LS08 U9
@@ -302,7 +261,7 @@ U 2 1 5F52E2BC
 P 13300 1150
 F 0 "U9" H 13300 1475 50  0000 C CNN
 F 1 "74HC08" H 13300 1384 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 13300 1150 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 13300 1150 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 13300 1150 50  0001 C CNN
 	2    13300 1150
 	1    0    0    -1  
@@ -313,7 +272,7 @@ U 3 1 5F53008C
 P 13300 1750
 F 0 "U9" H 13300 2075 50  0000 C CNN
 F 1 "74HC08" H 13300 1984 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 13300 1750 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 13300 1750 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 13300 1750 50  0001 C CNN
 	3    13300 1750
 	1    0    0    -1  
@@ -324,7 +283,7 @@ U 2 1 5F530880
 P 13300 4550
 F 0 "U12" H 13300 4875 50  0000 C CNN
 F 1 "74HC08" H 13300 4784 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 13300 4550 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 13300 4550 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 13300 4550 50  0001 C CNN
 	2    13300 4550
 	1    0    0    -1  
@@ -364,8 +323,6 @@ Text Label 10900 950  0    50   ~ 0
 DIN1A
 Text Label 10900 1950 0    50   ~ 0
 DIN1B
-Wire Wire Line
-	8000 1600 8000 1100
 Wire Wire Line
 	8000 1100 8100 1100
 Connection ~ 8000 1600
@@ -408,12 +365,12 @@ $EndComp
 $Comp
 L 74xx:74HC14 U7
 U 2 1 5F7672AE
-P 8550 3300
-F 0 "U7" H 8550 3617 50  0000 C CNN
-F 1 "74HC14" H 8550 3526 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 8550 3300 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 8550 3300 50  0001 C CNN
-	2    8550 3300
+P 8550 5000
+F 0 "U7" H 8550 5317 50  0000 C CNN
+F 1 "74HC14" H 8550 5226 50  0000 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 8550 5000 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 8550 5000 50  0001 C CNN
+	2    8550 5000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -433,7 +390,7 @@ U 1 1 5F7672C2
 P 8750 2800
 F 0 "RV2" H 8680 2846 50  0000 R CNN
 F 1 "R_POT" H 8680 2755 50  0000 R CNN
-F 2 "MyLib:TSR-065" H 8750 2800 50  0001 C CNN
+F 2 "MyLib:GF063P1" H 8750 2800 50  0001 C CNN
 F 3 "~" H 8750 2800 50  0001 C CNN
 	1    8750 2800
 	-1   0    0    -1  
@@ -469,10 +426,10 @@ U 1 1 5F7672E7
 P 12300 2750
 F 0 "U10" H 12300 3075 50  0000 C CNN
 F 1 "74HC08" H 12300 2984 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 12300 2750 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 12300 2750 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 12300 2750 50  0001 C CNN
 	1    12300 2750
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L 74xx:74LS08 U10
@@ -480,10 +437,10 @@ U 4 1 5F7672FB
 P 12300 3550
 F 0 "U10" H 12300 3875 50  0000 C CNN
 F 1 "74HC08" H 12300 3784 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 12300 3550 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 12300 3550 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 12300 3550 50  0001 C CNN
 	4    12300 3550
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L 74xx:74LS08 U10
@@ -491,7 +448,7 @@ U 3 1 5F767305
 P 13300 3450
 F 0 "U10" H 13300 3775 50  0000 C CNN
 F 1 "74HC08" H 13300 3684 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 13300 3450 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 13300 3450 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 13300 3450 50  0001 C CNN
 	3    13300 3450
 	1    0    0    -1  
@@ -502,7 +459,7 @@ U 4 1 5F76730F
 P 12300 5250
 F 0 "U12" H 12300 5575 50  0000 C CNN
 F 1 "74HC08" H 12300 5484 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 12300 5250 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 12300 5250 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 12300 5250 50  0001 C CNN
 	4    12300 5250
 	1    0    0    -1  
@@ -513,7 +470,7 @@ U 2 1 5F767319
 P 13300 2850
 F 0 "U10" H 13300 3175 50  0000 C CNN
 F 1 "74HC08" H 13300 3084 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 13300 2850 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 13300 2850 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 13300 2850 50  0001 C CNN
 	2    13300 2850
 	1    0    0    -1  
@@ -524,13 +481,11 @@ U 3 1 5F767323
 P 13300 5150
 F 0 "U12" H 13300 5475 50  0000 C CNN
 F 1 "74HC08" H 13300 5384 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 13300 5150 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 13300 5150 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 13300 5150 50  0001 C CNN
 	3    13300 5150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	11900 2650 12000 2650
 Wire Wire Line
 	11900 3650 12000 3650
 Wire Wire Line
@@ -564,10 +519,6 @@ Text Label 10900 2650 0    50   ~ 0
 DIN2A
 Text Label 10900 3650 0    50   ~ 0
 DIN2B
-Wire Wire Line
-	8000 3300 8000 2800
-Wire Wire Line
-	8000 2800 8100 2800
 Connection ~ 8000 3300
 Wire Wire Line
 	8750 2550 9050 2550
@@ -608,12 +559,12 @@ $EndComp
 $Comp
 L 74xx:74HC14 U7
 U 6 1 5F77F525
-P 8550 5000
-F 0 "U7" H 8550 5317 50  0000 C CNN
-F 1 "74HC14" H 8550 5226 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 8550 5000 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 8550 5000 50  0001 C CNN
-	6    8550 5000
+P 8550 1600
+F 0 "U7" H 8550 1917 50  0000 C CNN
+F 1 "74HC14" H 8550 1826 50  0000 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 8550 1600 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 8550 1600 50  0001 C CNN
+	6    8550 1600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -633,7 +584,7 @@ U 1 1 5F77F539
 P 8750 4500
 F 0 "RV3" H 8680 4546 50  0000 R CNN
 F 1 "R_POT" H 8680 4455 50  0000 R CNN
-F 2 "MyLib:TSR-065" H 8750 4500 50  0001 C CNN
+F 2 "MyLib:GF063P1" H 8750 4500 50  0001 C CNN
 F 3 "~" H 8750 4500 50  0001 C CNN
 	1    8750 4500
 	-1   0    0    -1  
@@ -669,7 +620,7 @@ U 2 1 5F77F55E
 P 13300 6250
 F 0 "U13" H 13300 6575 50  0000 C CNN
 F 1 "74HC08" H 13300 6484 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 13300 6250 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 13300 6250 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 13300 6250 50  0001 C CNN
 	2    13300 6250
 	1    0    0    -1  
@@ -680,7 +631,7 @@ U 1 1 5F77F572
 P 12300 6150
 F 0 "U13" H 12300 6475 50  0000 C CNN
 F 1 "74HC08" H 12300 6384 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 12300 6150 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 12300 6150 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 12300 6150 50  0001 C CNN
 	1    12300 6150
 	1    0    0    -1  
@@ -691,7 +642,7 @@ U 3 1 5F77F57C
 P 13300 6850
 F 0 "U13" H 13300 7175 50  0000 C CNN
 F 1 "74HC08" H 13300 7084 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 13300 6850 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 13300 6850 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 13300 6850 50  0001 C CNN
 	3    13300 6850
 	1    0    0    -1  
@@ -702,7 +653,7 @@ U 4 1 5F77F590
 P 12300 6950
 F 0 "U13" H 12300 7275 50  0000 C CNN
 F 1 "74HC08" H 12300 7184 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 12300 6950 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 12300 6950 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 12300 6950 50  0001 C CNN
 	4    12300 6950
 	1    0    0    -1  
@@ -742,8 +693,6 @@ Text Label 10900 4350 0    50   ~ 0
 DIN3A
 Text Label 10900 5350 0    50   ~ 0
 DIN3B
-Wire Wire Line
-	8000 5000 8000 4500
 Wire Wire Line
 	8000 4500 8100 4500
 Connection ~ 8000 5000
@@ -786,12 +735,12 @@ $EndComp
 $Comp
 L 74xx:74HC14 U7
 U 5 1 5F77F5F8
-P 8550 6700
-F 0 "U7" H 8550 7017 50  0000 C CNN
-F 1 "74HC14" H 8550 6926 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 8550 6700 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 8550 6700 50  0001 C CNN
-	5    8550 6700
+P 8550 3300
+F 0 "U7" H 8550 3617 50  0000 C CNN
+F 1 "74HC14" H 8550 3526 50  0000 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 8550 3300 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 8550 3300 50  0001 C CNN
+	5    8550 3300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -811,7 +760,7 @@ U 1 1 5F77F60C
 P 8750 6200
 F 0 "RV4" H 8680 6246 50  0000 R CNN
 F 1 "R_POT" H 8680 6155 50  0000 R CNN
-F 2 "MyLib:TSR-065" H 8750 6200 50  0001 C CNN
+F 2 "MyLib:GF063P1" H 8750 6200 50  0001 C CNN
 F 3 "~" H 8750 6200 50  0001 C CNN
 	1    8750 6200
 	-1   0    0    -1  
@@ -918,25 +867,14 @@ F 3 "~" H 9200 6450 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 5F82270D
-P 1400 1200
-F 0 "J2" H 1480 1192 50  0000 L CNN
-F 1 "POWER" H 1480 1101 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1400 1200 50  0001 C CNN
-F 3 "~" H 1400 1200 50  0001 C CNN
-	1    1400 1200
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x08 J6
 U 1 1 5F8245E9
-P 2000 5150
-F 0 "J6" H 2080 5142 50  0000 L CNN
-F 1 "MEGA_A8-A15" H 2080 5051 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 2000 5150 50  0001 C CNN
-F 3 "~" H 2000 5150 50  0001 C CNN
-	1    2000 5150
+P 1500 5150
+F 0 "J6" H 1580 5142 50  0000 L CNN
+F 1 "MEGA_A8-A15" H 1580 5051 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 1500 5150 50  0001 C CNN
+F 3 "~" H 1500 5150 50  0001 C CNN
+	1    1500 5150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -953,97 +891,78 @@ $EndComp
 $Comp
 L Device:R_Network08 RN1
 U 1 1 5F82BF47
-P 1500 5850
-F 0 "RN1" H 1021 5804 50  0000 R CNN
-F 1 "330" H 1021 5895 50  0000 R CNN
-F 2 "Resistor_THT:R_Array_SIP9" V 1975 5850 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 1500 5850 50  0001 C CNN
-	1    1500 5850
-	1    0    0    1   
+P 2300 8500
+F 0 "RN1" H 1821 8454 50  0000 R CNN
+F 1 "330" H 1821 8545 50  0000 R CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 2775 8500 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 2300 8500 50  0001 C CNN
+	1    2300 8500
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1800 4850 1100 4850
+	2100 8300 2100 8100
+Connection ~ 2100 8100
 Wire Wire Line
-	1800 4950 1200 4950
+	2100 8100 3000 8100
 Wire Wire Line
-	1800 5050 1300 5050
+	2200 8300 2200 8000
+Connection ~ 2200 8000
 Wire Wire Line
-	1800 5150 1400 5150
+	2200 8000 3000 8000
 Wire Wire Line
-	1800 5250 1500 5250
+	2300 8300 2300 7900
+Connection ~ 2300 7900
 Wire Wire Line
-	1800 5350 1600 5350
+	2300 7900 3000 7900
 Wire Wire Line
-	1800 5450 1700 5450
+	2400 8300 2400 7800
+Connection ~ 2400 7800
 Wire Wire Line
-	1800 5650 1800 5550
-Connection ~ 1800 5550
+	2400 7800 3000 7800
 Wire Wire Line
-	1800 5550 800  5550
+	2500 8300 2500 7700
+Connection ~ 2500 7700
 Wire Wire Line
-	1700 5650 1700 5450
-Connection ~ 1700 5450
+	2500 7700 3000 7700
 Wire Wire Line
-	1700 5450 800  5450
+	2600 8300 2600 7600
+Connection ~ 2600 7600
 Wire Wire Line
-	1600 5650 1600 5350
-Connection ~ 1600 5350
+	2600 7600 3000 7600
 Wire Wire Line
-	1600 5350 800  5350
+	2700 8300 2700 7500
+Connection ~ 2700 7500
 Wire Wire Line
-	1500 5650 1500 5250
-Connection ~ 1500 5250
-Wire Wire Line
-	1500 5250 800  5250
-Wire Wire Line
-	1400 5650 1400 5150
-Connection ~ 1400 5150
-Wire Wire Line
-	1400 5150 800  5150
-Wire Wire Line
-	1300 5650 1300 5050
-Connection ~ 1300 5050
-Wire Wire Line
-	1300 5050 800  5050
-Wire Wire Line
-	1200 5650 1200 4950
-Connection ~ 1200 4950
-Wire Wire Line
-	1200 4950 800  4950
-Wire Wire Line
-	1100 5650 1100 4850
-Connection ~ 1100 4850
-Wire Wire Line
-	1100 4850 800  4850
-Text Label 800  4850 0    50   ~ 0
+	2700 7500 3000 7500
+Text Label 3000 7500 2    50   ~ 0
 DIN1A
-Text Label 800  4950 0    50   ~ 0
+Text Label 3000 7600 2    50   ~ 0
 DIN1B
-Text Label 800  5050 0    50   ~ 0
+Text Label 3000 7700 2    50   ~ 0
 DIN2A
-Text Label 800  5150 0    50   ~ 0
+Text Label 3000 7800 2    50   ~ 0
 DIN2B
-Text Label 800  5250 0    50   ~ 0
+Text Label 3000 7900 2    50   ~ 0
 DIN3A
-Text Label 800  5350 0    50   ~ 0
+Text Label 3000 8000 2    50   ~ 0
 DIN3B
-Text Label 800  5450 0    50   ~ 0
+Text Label 3000 8100 2    50   ~ 0
 DIN4A
-Text Label 800  5550 0    50   ~ 0
+Text Label 3000 8200 2    50   ~ 0
 DIN4B
 $Comp
 L power:GND #PWR07
 U 1 1 5F902AD4
-P 1100 6150
-F 0 "#PWR07" H 1100 5900 50  0001 C CNN
-F 1 "GND" H 1105 5977 50  0000 C CNN
-F 2 "" H 1100 6150 50  0001 C CNN
-F 3 "" H 1100 6150 50  0001 C CNN
-	1    1100 6150
-	1    0    0    -1  
+P 2700 8800
+F 0 "#PWR07" H 2700 8550 50  0001 C CNN
+F 1 "GND" H 2705 8627 50  0000 C CNN
+F 2 "" H 2700 8800 50  0001 C CNN
+F 3 "" H 2700 8800 50  0001 C CNN
+	1    2700 8800
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1100 6150 1100 6050
+	2700 8800 2700 8700
 Wire Wire Line
 	1200 3850 800  3850
 Text Label 800  3850 0    50   ~ 0
@@ -1090,38 +1009,38 @@ $EndComp
 $Comp
 L power:GND #PWR06
 U 1 1 5F976D47
-P 850 1400
-F 0 "#PWR06" H 850 1150 50  0001 C CNN
-F 1 "GND" H 855 1227 50  0000 C CNN
-F 2 "" H 850 1400 50  0001 C CNN
-F 3 "" H 850 1400 50  0001 C CNN
-	1    850  1400
+P 1850 1700
+F 0 "#PWR06" H 1850 1450 50  0001 C CNN
+F 1 "GND" H 1855 1527 50  0000 C CNN
+F 2 "" H 1850 1700 50  0001 C CNN
+F 3 "" H 1850 1700 50  0001 C CNN
+	1    1850 1700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	850  1300 850  1400
+	1850 1600 1850 1700
 Wire Wire Line
 	850  1200 850  1100
 $Comp
 L power:+5V #PWR014
 U 1 1 5F9A8AB6
-P 2050 1150
-F 0 "#PWR014" H 2050 1000 50  0001 C CNN
-F 1 "+5V" H 2065 1323 50  0000 C CNN
-F 2 "" H 2050 1150 50  0001 C CNN
-F 3 "" H 2050 1150 50  0001 C CNN
-	1    2050 1150
+P 2100 9850
+F 0 "#PWR014" H 2100 9700 50  0001 C CNN
+F 1 "+5V" H 2115 10023 50  0000 C CNN
+F 2 "" H 2100 9850 50  0001 C CNN
+F 3 "" H 2100 9850 50  0001 C CNN
+	1    2100 9850
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR015
 U 1 1 5F9A8EE7
-P 2050 1400
-F 0 "#PWR015" H 2050 1150 50  0001 C CNN
-F 1 "GND" H 2055 1227 50  0000 C CNN
-F 2 "" H 2050 1400 50  0001 C CNN
-F 3 "" H 2050 1400 50  0001 C CNN
-	1    2050 1400
+P 2100 10100
+F 0 "#PWR015" H 2100 9850 50  0001 C CNN
+F 1 "GND" H 2105 9927 50  0000 C CNN
+F 2 "" H 2100 10100 50  0001 C CNN
+F 3 "" H 2100 10100 50  0001 C CNN
+	1    2100 10100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1130,7 +1049,7 @@ U 5 1 5F9EB7C2
 P 5850 10350
 F 0 "U2" H 5900 10700 50  0000 L CNN
 F 1 "74HC08" H 5900 10000 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 5850 10350 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 5850 10350 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 5850 10350 50  0001 C CNN
 	5    5850 10350
 	1    0    0    -1  
@@ -1154,7 +1073,7 @@ U 5 1 5FB2FEE2
 P 6350 10350
 F 0 "U3" H 6400 10700 50  0000 L CNN
 F 1 "74HC08" H 6400 10000 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 6350 10350 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 6350 10350 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6350 10350 50  0001 C CNN
 	5    6350 10350
 	1    0    0    -1  
@@ -1191,7 +1110,7 @@ U 3 1 5FB4F344
 P 6800 6050
 F 0 "U7" H 6800 6367 50  0000 C CNN
 F 1 "74HC14" H 6800 6276 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 6800 6050 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 6800 6050 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6800 6050 50  0001 C CNN
 	3    6800 6050
 	1    0    0    -1  
@@ -1202,7 +1121,7 @@ U 4 1 5FB5006A
 P 6800 6650
 F 0 "U7" H 6800 6967 50  0000 C CNN
 F 1 "74HC14" H 6800 6876 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 6800 6650 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 6800 6650 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6800 6650 50  0001 C CNN
 	4    6800 6650
 	1    0    0    -1  
@@ -1233,7 +1152,7 @@ U 7 1 5FBF9815
 P 8300 10350
 F 0 "U7" H 8350 10700 50  0000 L CNN
 F 1 "74HC14" H 8350 10000 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 8300 10350 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 8300 10350 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 8300 10350 50  0001 C CNN
 	7    8300 10350
 	1    0    0    -1  
@@ -1303,253 +1222,71 @@ DOUT4A
 Text Label 15800 6250 2    50   ~ 0
 DOUT4B
 $Comp
-L Connector_Generic:Conn_01x04 J11
-U 1 1 5FE7EAC0
-P 14300 1150
-F 0 "J11" H 14218 1467 50  0000 C CNN
-F 1 "ANALOG OUT1" H 14218 1376 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 14300 1150 50  0001 C CNN
-F 3 "~" H 14300 1150 50  0001 C CNN
-	1    14300 1150
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR047
-U 1 1 5FED5334
-P 14600 1450
-F 0 "#PWR047" H 14600 1200 50  0001 C CNN
-F 1 "GND" H 14605 1277 50  0000 C CNN
-F 2 "" H 14600 1450 50  0001 C CNN
-F 3 "" H 14600 1450 50  0001 C CNN
-	1    14600 1450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14500 1050 14600 1050
-Wire Wire Line
-	14600 1050 14600 1350
-Wire Wire Line
-	14500 1350 14600 1350
-Connection ~ 14600 1350
-Wire Wire Line
-	14600 1350 14600 1450
-$Comp
-L Connector_Generic:Conn_01x04 J12
+L Connector_Generic:Conn_01x02 J12
 U 1 1 5FF2F82A
-P 15200 1150
-F 0 "J12" H 15118 1467 50  0000 C CNN
-F 1 "ANALOG OUT2" H 15118 1376 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 15200 1150 50  0001 C CNN
-F 3 "~" H 15200 1150 50  0001 C CNN
-	1    15200 1150
-	-1   0    0    -1  
+P 15200 1250
+F 0 "J12" H 15118 1567 50  0000 C CNN
+F 1 "AOUT2" H 15118 1476 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 15200 1250 50  0001 C CNN
+F 3 "~" H 15200 1250 50  0001 C CNN
+	1    15200 1250
+	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR055
-U 1 1 5FF2F834
-P 15500 1450
-F 0 "#PWR055" H 15500 1200 50  0001 C CNN
-F 1 "GND" H 15505 1277 50  0000 C CNN
-F 2 "" H 15500 1450 50  0001 C CNN
-F 3 "" H 15500 1450 50  0001 C CNN
-	1    15500 1450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	15400 1050 15500 1050
-Wire Wire Line
-	15500 1050 15500 1350
-Wire Wire Line
-	15400 1350 15500 1350
-Connection ~ 15500 1350
-Wire Wire Line
-	15500 1350 15500 1450
-$Comp
-L Connector_Generic:Conn_01x04 J13
+L Connector_Generic:Conn_01x02 J13
 U 1 1 5FFA8C6A
-P 14300 2150
-F 0 "J13" H 14218 2467 50  0000 C CNN
-F 1 "ANALOG OUT3" H 14218 2376 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 14300 2150 50  0001 C CNN
-F 3 "~" H 14300 2150 50  0001 C CNN
-	1    14300 2150
-	-1   0    0    -1  
+P 14300 2250
+F 0 "J13" H 14218 2567 50  0000 C CNN
+F 1 "AOUT3" H 14218 2476 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 14300 2250 50  0001 C CNN
+F 3 "~" H 14300 2250 50  0001 C CNN
+	1    14300 2250
+	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR048
-U 1 1 5FFA8C74
-P 14600 2450
-F 0 "#PWR048" H 14600 2200 50  0001 C CNN
-F 1 "GND" H 14605 2277 50  0000 C CNN
-F 2 "" H 14600 2450 50  0001 C CNN
-F 3 "" H 14600 2450 50  0001 C CNN
-	1    14600 2450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14500 2050 14600 2050
-Wire Wire Line
-	14600 2050 14600 2350
-Wire Wire Line
-	14500 2350 14600 2350
-Connection ~ 14600 2350
-Wire Wire Line
-	14600 2350 14600 2450
-$Comp
-L Connector_Generic:Conn_01x04 J14
+L Connector_Generic:Conn_01x02 J14
 U 1 1 5FFA8C83
-P 15200 2150
-F 0 "J14" H 15118 2467 50  0000 C CNN
-F 1 "ANALOG OUT4" H 15118 2376 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 15200 2150 50  0001 C CNN
-F 3 "~" H 15200 2150 50  0001 C CNN
-	1    15200 2150
-	-1   0    0    -1  
+P 15200 2250
+F 0 "J14" H 15118 2567 50  0000 C CNN
+F 1 "AOUT4" H 15118 2476 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 15200 2250 50  0001 C CNN
+F 3 "~" H 15200 2250 50  0001 C CNN
+	1    15200 2250
+	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR056
-U 1 1 5FFA8C8D
-P 15500 2450
-F 0 "#PWR056" H 15500 2200 50  0001 C CNN
-F 1 "GND" H 15505 2277 50  0000 C CNN
-F 2 "" H 15500 2450 50  0001 C CNN
-F 3 "" H 15500 2450 50  0001 C CNN
-	1    15500 2450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	15400 2050 15500 2050
-Wire Wire Line
-	15500 2050 15500 2350
-Wire Wire Line
-	15400 2350 15500 2350
-Connection ~ 15500 2350
-Wire Wire Line
-	15500 2350 15500 2450
-$Comp
-L Connector_Generic:Conn_01x04 J21
+L Connector_Generic:Conn_01x02 J21
 U 1 1 6005F408
 P 14300 5150
 F 0 "J21" H 14218 5467 50  0000 C CNN
 F 1 "DIGITAL OUT1" H 14218 5376 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 14300 5150 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 14300 5150 50  0001 C CNN
 F 3 "~" H 14300 5150 50  0001 C CNN
 	1    14300 5150
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR051
-U 1 1 6005F412
-P 14600 5450
-F 0 "#PWR051" H 14600 5200 50  0001 C CNN
-F 1 "GND" H 14605 5277 50  0000 C CNN
-F 2 "" H 14600 5450 50  0001 C CNN
-F 3 "" H 14600 5450 50  0001 C CNN
-	1    14600 5450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14500 5050 14600 5050
-Wire Wire Line
-	14600 5050 14600 5350
-Wire Wire Line
-	14500 5350 14600 5350
-Connection ~ 14600 5350
-Wire Wire Line
-	14600 5350 14600 5450
-$Comp
-L Connector_Generic:Conn_01x04 J22
+L Connector_Generic:Conn_01x02 J22
 U 1 1 6009EC59
 P 15200 5150
 F 0 "J22" H 15118 5467 50  0000 C CNN
 F 1 "DIGITAL OUT2" H 15118 5376 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 15200 5150 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 15200 5150 50  0001 C CNN
 F 3 "~" H 15200 5150 50  0001 C CNN
 	1    15200 5150
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR059
-U 1 1 6009EC63
-P 15500 5450
-F 0 "#PWR059" H 15500 5200 50  0001 C CNN
-F 1 "GND" H 15505 5277 50  0000 C CNN
-F 2 "" H 15500 5450 50  0001 C CNN
-F 3 "" H 15500 5450 50  0001 C CNN
-	1    15500 5450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	15400 5050 15500 5050
-Wire Wire Line
-	15500 5050 15500 5350
-Wire Wire Line
-	15400 5350 15500 5350
-Connection ~ 15500 5350
-Wire Wire Line
-	15500 5350 15500 5450
-$Comp
-L Connector_Generic:Conn_01x04 J23
+L Connector_Generic:Conn_01x02 J23
 U 1 1 600C03D0
 P 14300 6150
 F 0 "J23" H 14218 6467 50  0000 C CNN
 F 1 "DIGITAL OUT3" H 14218 6376 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 14300 6150 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 14300 6150 50  0001 C CNN
 F 3 "~" H 14300 6150 50  0001 C CNN
 	1    14300 6150
 	-1   0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR052
-U 1 1 600C03DA
-P 14600 6450
-F 0 "#PWR052" H 14600 6200 50  0001 C CNN
-F 1 "GND" H 14605 6277 50  0000 C CNN
-F 2 "" H 14600 6450 50  0001 C CNN
-F 3 "" H 14600 6450 50  0001 C CNN
-	1    14600 6450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14500 6050 14600 6050
-Wire Wire Line
-	14600 6050 14600 6350
-Wire Wire Line
-	14500 6350 14600 6350
-Connection ~ 14600 6350
-Wire Wire Line
-	14600 6350 14600 6450
-$Comp
-L Connector_Generic:Conn_01x04 J24
-U 1 1 600C03E9
-P 15200 6150
-F 0 "J24" H 15118 6467 50  0000 C CNN
-F 1 "DIGITAL OUT4" H 15118 6376 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 15200 6150 50  0001 C CNN
-F 3 "~" H 15200 6150 50  0001 C CNN
-	1    15200 6150
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR060
-U 1 1 600C03F3
-P 15500 6450
-F 0 "#PWR060" H 15500 6200 50  0001 C CNN
-F 1 "GND" H 15505 6277 50  0000 C CNN
-F 2 "" H 15500 6450 50  0001 C CNN
-F 3 "" H 15500 6450 50  0001 C CNN
-	1    15500 6450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	15400 6050 15500 6050
-Wire Wire Line
-	15500 6050 15500 6350
-Wire Wire Line
-	15400 6350 15500 6350
-Connection ~ 15500 6350
-Wire Wire Line
-	15500 6350 15500 6450
 NoConn ~ 7100 6050
 NoConn ~ 7100 6650
 $Comp
@@ -1863,7 +1600,7 @@ U 1 1 613C20F5
 P 12300 4450
 F 0 "U12" H 12300 4775 50  0000 C CNN
 F 1 "74HC08" H 12300 4684 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 12300 4450 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 12300 4450 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 12300 4450 50  0001 C CNN
 	1    12300 4450
 	1    0    0    -1  
@@ -1882,12 +1619,12 @@ Wire Wire Line
 $Comp
 L 74xx:74LS08 U5
 U 4 1 615EB993
-P 6800 1050
-F 0 "U5" H 6800 1375 50  0000 C CNN
-F 1 "74HC08" H 6800 1284 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 6800 1050 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6800 1050 50  0001 C CNN
-	4    6800 1050
+P 6800 2250
+F 0 "U5" H 6800 2575 50  0000 C CNN
+F 1 "74HC08" H 6800 2484 50  0000 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 6800 2250 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6800 2250 50  0001 C CNN
+	4    6800 2250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1914,34 +1651,30 @@ Wire Wire Line
 	7100 1050 7500 1050
 Wire Wire Line
 	7100 1650 7500 1650
-Text Label 5200 950  0    50   ~ 0
+Text Label 2700 3350 0    50   ~ 0
 SEL5
-Text Label 5200 1750 0    50   ~ 0
+Text Label 2700 4150 0    50   ~ 0
 PWM5IN
-Text Label 7500 1650 2    50   ~ 0
-AOUT5B
-Text Label 7500 1050 2    50   ~ 0
-AOUT5A
 $Comp
 L 74xx:74LS08 U5
 U 1 1 615EB9AA
-P 6800 1650
-F 0 "U5" H 6800 1975 50  0000 C CNN
-F 1 "74HC08" H 6800 1884 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 6800 1650 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6800 1650 50  0001 C CNN
-	1    6800 1650
-	1    0    0    -1  
+P 6800 2850
+F 0 "U5" H 6800 3175 50  0000 C CNN
+F 1 "74HC08" H 6800 3084 50  0000 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 6800 2850 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6800 2850 50  0001 C CNN
+	1    6800 2850
+	1    0    0    1   
 $EndComp
 $Comp
 L 74xx:74LS08 U5
 U 3 1 615EB9B0
-P 6800 2250
-F 0 "U5" H 6800 2575 50  0000 C CNN
-F 1 "74HC08" H 6800 2484 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 6800 2250 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6800 2250 50  0001 C CNN
-	3    6800 2250
+P 6800 1050
+F 0 "U5" H 6800 1375 50  0000 C CNN
+F 1 "74HC08" H 6800 1284 50  0000 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 6800 1050 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6800 1050 50  0001 C CNN
+	3    6800 1050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1968,24 +1701,24 @@ Wire Wire Line
 	7100 2250 7500 2250
 Wire Wire Line
 	7100 2850 7500 2850
-Text Label 5200 2150 0    50   ~ 0
+Text Label 2700 4550 0    50   ~ 0
 SEL6
-Text Label 5200 2950 0    50   ~ 0
+Text Label 2700 5350 0    50   ~ 0
 PWM6IN
-Text Label 7500 2850 2    50   ~ 0
+Text Label 5000 5250 2    50   ~ 0
 AOUT6B
-Text Label 7500 2250 2    50   ~ 0
+Text Label 5000 4650 2    50   ~ 0
 AOUT6A
 $Comp
 L 74xx:74LS08 U5
 U 2 1 615EB9C7
-P 6800 2850
-F 0 "U5" H 6800 3175 50  0000 C CNN
-F 1 "74HC08" H 6800 3084 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 6800 2850 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6800 2850 50  0001 C CNN
-	2    6800 2850
-	1    0    0    -1  
+P 6800 1650
+F 0 "U5" H 6800 1975 50  0000 C CNN
+F 1 "74HC08" H 6800 1884 50  0000 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 6800 1650 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6800 1650 50  0001 C CNN
+	2    6800 1650
+	1    0    0    1   
 $EndComp
 $Comp
 L 74xx:74LS08 U6
@@ -1993,63 +1726,9 @@ U 4 1 615EB9CD
 P 6800 3450
 F 0 "U6" H 6800 3775 50  0000 C CNN
 F 1 "74HC08" H 6800 3684 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 6800 3450 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 6800 3450 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6800 3450 50  0001 C CNN
 	4    6800 3450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6500 3350 5700 3350
-Wire Wire Line
-	5800 3950 5700 3950
-Wire Wire Line
-	5700 3950 5700 3350
-Connection ~ 5700 3350
-Wire Wire Line
-	5700 3350 5200 3350
-Wire Wire Line
-	6500 4150 5600 4150
-Wire Wire Line
-	6400 3950 6500 3950
-Wire Wire Line
-	5600 4150 5600 3550
-Wire Wire Line
-	5600 3550 6500 3550
-Connection ~ 5600 4150
-Wire Wire Line
-	5600 4150 5200 4150
-Wire Wire Line
-	7100 3450 7500 3450
-Wire Wire Line
-	7100 4050 7500 4050
-Text Label 5200 3350 0    50   ~ 0
-SEL7
-Text Label 5200 4150 0    50   ~ 0
-PWM7IN
-Text Label 7500 4050 2    50   ~ 0
-AOUT7B
-Text Label 7500 3450 2    50   ~ 0
-AOUT7A
-$Comp
-L 74xx:74LS08 U6
-U 1 1 615EB9E4
-P 6800 4050
-F 0 "U6" H 6800 4375 50  0000 C CNN
-F 1 "74HC08" H 6800 4284 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 6800 4050 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6800 4050 50  0001 C CNN
-	1    6800 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS08 U6
-U 3 1 615EB9EA
-P 6800 4650
-F 0 "U6" H 6800 4975 50  0000 C CNN
-F 1 "74HC08" H 6800 4884 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 6800 4650 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6800 4650 50  0001 C CNN
-	3    6800 4650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -2076,6 +1755,60 @@ Wire Wire Line
 	7100 4650 7500 4650
 Wire Wire Line
 	7100 5250 7500 5250
+Text Label 5200 3350 0    50   ~ 0
+SEL7
+Text Label 5200 4150 0    50   ~ 0
+PWM7IN
+Text Label 7500 4050 2    50   ~ 0
+AOUT7B
+Text Label 7500 3450 2    50   ~ 0
+AOUT7A
+$Comp
+L 74xx:74LS08 U6
+U 1 1 615EB9E4
+P 6800 4050
+F 0 "U6" H 6800 4375 50  0000 C CNN
+F 1 "74HC08" H 6800 4284 50  0000 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 6800 4050 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6800 4050 50  0001 C CNN
+	1    6800 4050
+	1    0    0    1   
+$EndComp
+$Comp
+L 74xx:74LS08 U6
+U 3 1 615EB9EA
+P 6800 4650
+F 0 "U6" H 6800 4975 50  0000 C CNN
+F 1 "74HC08" H 6800 4884 50  0000 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 6800 4650 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6800 4650 50  0001 C CNN
+	3    6800 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3350 5700 3350
+Wire Wire Line
+	5800 3950 5700 3950
+Wire Wire Line
+	5700 3950 5700 3350
+Connection ~ 5700 3350
+Wire Wire Line
+	5700 3350 5200 3350
+Wire Wire Line
+	6500 4150 5600 4150
+Wire Wire Line
+	6400 3950 6500 3950
+Wire Wire Line
+	5600 4150 5600 3550
+Wire Wire Line
+	5600 3550 6500 3550
+Connection ~ 5600 4150
+Wire Wire Line
+	5600 4150 5200 4150
+Wire Wire Line
+	7100 3450 7500 3450
+Wire Wire Line
+	7100 4050 7500 4050
 Text Label 5200 4550 0    50   ~ 0
 SEL8
 Text Label 5200 5350 0    50   ~ 0
@@ -2090,10 +1823,10 @@ U 2 1 615EBA01
 P 6800 5250
 F 0 "U6" H 6800 5575 50  0000 C CNN
 F 1 "74HC08" H 6800 5484 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 6800 5250 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 6800 5250 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6800 5250 50  0001 C CNN
 	2    6800 5250
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x08 J4
@@ -2171,149 +1904,69 @@ AOUT8A
 Text Label 15800 4250 2    50   ~ 0
 AOUT8B
 $Comp
-L Connector_Generic:Conn_01x04 J15
+L Connector_Generic:Conn_01x02 J15
 U 1 1 6184ECF2
-P 14300 3150
-F 0 "J15" H 14218 3467 50  0000 C CNN
-F 1 "ANALOG OUT1" H 14218 3376 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 14300 3150 50  0001 C CNN
-F 3 "~" H 14300 3150 50  0001 C CNN
-	1    14300 3150
-	-1   0    0    -1  
+P 14300 3250
+F 0 "J15" H 14218 3567 50  0000 C CNN
+F 1 "AOUT5" H 14218 3476 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 14300 3250 50  0001 C CNN
+F 3 "~" H 14300 3250 50  0001 C CNN
+	1    14300 3250
+	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR049
-U 1 1 6184ECF8
-P 14600 3450
-F 0 "#PWR049" H 14600 3200 50  0001 C CNN
-F 1 "GND" H 14605 3277 50  0000 C CNN
-F 2 "" H 14600 3450 50  0001 C CNN
-F 3 "" H 14600 3450 50  0001 C CNN
-	1    14600 3450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14500 3050 14600 3050
-Wire Wire Line
-	14600 3050 14600 3350
-Wire Wire Line
-	14500 3350 14600 3350
-Connection ~ 14600 3350
-Wire Wire Line
-	14600 3350 14600 3450
-$Comp
-L Connector_Generic:Conn_01x04 J16
+L Connector_Generic:Conn_01x02 J16
 U 1 1 6184ED03
-P 15200 3150
-F 0 "J16" H 15118 3467 50  0000 C CNN
-F 1 "ANALOG OUT2" H 15118 3376 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 15200 3150 50  0001 C CNN
-F 3 "~" H 15200 3150 50  0001 C CNN
-	1    15200 3150
-	-1   0    0    -1  
+P 15200 3250
+F 0 "J16" H 15118 3567 50  0000 C CNN
+F 1 "AOUT6" H 15118 3476 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 15200 3250 50  0001 C CNN
+F 3 "~" H 15200 3250 50  0001 C CNN
+	1    15200 3250
+	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR057
-U 1 1 6184ED09
-P 15500 3450
-F 0 "#PWR057" H 15500 3200 50  0001 C CNN
-F 1 "GND" H 15505 3277 50  0000 C CNN
-F 2 "" H 15500 3450 50  0001 C CNN
-F 3 "" H 15500 3450 50  0001 C CNN
-	1    15500 3450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	15400 3050 15500 3050
-Wire Wire Line
-	15500 3050 15500 3350
-Wire Wire Line
-	15400 3350 15500 3350
-Connection ~ 15500 3350
-Wire Wire Line
-	15500 3350 15500 3450
-$Comp
-L Connector_Generic:Conn_01x04 J17
+L Connector_Generic:Conn_01x02 J17
 U 1 1 6184ED14
-P 14300 4150
-F 0 "J17" H 14218 4467 50  0000 C CNN
-F 1 "ANALOG OUT3" H 14218 4376 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 14300 4150 50  0001 C CNN
-F 3 "~" H 14300 4150 50  0001 C CNN
-	1    14300 4150
-	-1   0    0    -1  
+P 14300 4250
+F 0 "J17" H 14218 4567 50  0000 C CNN
+F 1 "AOUT7" H 14218 4476 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 14300 4250 50  0001 C CNN
+F 3 "~" H 14300 4250 50  0001 C CNN
+	1    14300 4250
+	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR050
-U 1 1 6184ED1A
-P 14600 4450
-F 0 "#PWR050" H 14600 4200 50  0001 C CNN
-F 1 "GND" H 14605 4277 50  0000 C CNN
-F 2 "" H 14600 4450 50  0001 C CNN
-F 3 "" H 14600 4450 50  0001 C CNN
-	1    14600 4450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14500 4050 14600 4050
-Wire Wire Line
-	14600 4050 14600 4350
-Wire Wire Line
-	14500 4350 14600 4350
-Connection ~ 14600 4350
-Wire Wire Line
-	14600 4350 14600 4450
-$Comp
-L Connector_Generic:Conn_01x04 J18
+L Connector_Generic:Conn_01x02 J18
 U 1 1 6184ED25
-P 15200 4150
-F 0 "J18" H 15118 4467 50  0000 C CNN
-F 1 "ANALOG OUT4" H 15118 4376 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 15200 4150 50  0001 C CNN
-F 3 "~" H 15200 4150 50  0001 C CNN
-	1    15200 4150
-	-1   0    0    -1  
+P 15200 4250
+F 0 "J18" H 15118 4567 50  0000 C CNN
+F 1 "AOUT8" H 15118 4476 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 15200 4250 50  0001 C CNN
+F 3 "~" H 15200 4250 50  0001 C CNN
+	1    15200 4250
+	-1   0    0    1   
 $EndComp
-$Comp
-L power:GND #PWR058
-U 1 1 6184ED2B
-P 15500 4450
-F 0 "#PWR058" H 15500 4200 50  0001 C CNN
-F 1 "GND" H 15505 4277 50  0000 C CNN
-F 2 "" H 15500 4450 50  0001 C CNN
-F 3 "" H 15500 4450 50  0001 C CNN
-	1    15500 4450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	15400 4050 15500 4050
-Wire Wire Line
-	15500 4050 15500 4350
-Wire Wire Line
-	15400 4350 15500 4350
-Connection ~ 15500 4350
-Wire Wire Line
-	15500 4350 15500 4450
 $Comp
 L power:GND #PWR018
 U 1 1 5FA010E1
-P 1900 8700
-F 0 "#PWR018" H 1900 8450 50  0001 C CNN
-F 1 "GND" H 1905 8527 50  0000 C CNN
-F 2 "" H 1900 8700 50  0001 C CNN
-F 3 "" H 1900 8700 50  0001 C CNN
-	1    1900 8700
+P 1850 8700
+F 0 "#PWR018" H 1850 8450 50  0001 C CNN
+F 1 "GND" H 1855 8527 50  0000 C CNN
+F 2 "" H 1850 8700 50  0001 C CNN
+F 3 "" H 1850 8700 50  0001 C CNN
+	1    1850 8700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1900 8700 1900 8600
+	1850 8700 1850 8600
 $Comp
 L 74xx:74LS08 U6
 U 5 1 619A0342
 P 7850 10350
 F 0 "U6" H 7900 10700 50  0000 L CNN
 F 1 "74HC08" H 7900 10000 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 7850 10350 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 7850 10350 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 7850 10350 50  0001 C CNN
 	5    7850 10350
 	1    0    0    -1  
@@ -2324,7 +1977,7 @@ U 1 1 6212A5B1
 P 2700 9950
 F 0 "C1" H 2792 9996 50  0000 L CNN
 F 1 "0.1u" H 2792 9905 50  0000 L CNN
-F 2 "" H 2700 9950 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H 2700 9950 50  0001 C CNN
 F 3 "~" H 2700 9950 50  0001 C CNN
 	1    2700 9950
 	1    0    0    -1  
@@ -2335,7 +1988,7 @@ U 5 1 619A0322
 P 7350 10350
 F 0 "U5" H 7400 10700 50  0000 L CNN
 F 1 "74HC08" H 7400 10000 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 7350 10350 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 7350 10350 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 7350 10350 50  0001 C CNN
 	5    7350 10350
 	1    0    0    -1  
@@ -2346,7 +1999,7 @@ U 5 1 5FC9935B
 P 11350 10350
 F 0 "U13" H 11400 10700 50  0000 L CNN
 F 1 "74HC08" H 11400 10000 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 11350 10350 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 11350 10350 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 11350 10350 50  0001 C CNN
 	5    11350 10350
 	1    0    0    -1  
@@ -2357,7 +2010,7 @@ U 5 1 5FC9932B
 P 10850 10350
 F 0 "U12" H 10900 10700 50  0000 L CNN
 F 1 "74HC08" H 10900 10000 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 10850 10350 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 10850 10350 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 10850 10350 50  0001 C CNN
 	5    10850 10350
 	1    0    0    -1  
@@ -2368,7 +2021,7 @@ U 5 1 5FC5BFDF
 P 9850 10350
 F 0 "U10" H 9900 10700 50  0000 L CNN
 F 1 "74HC08" H 9900 10000 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 9850 10350 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 9850 10350 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 9850 10350 50  0001 C CNN
 	5    9850 10350
 	1    0    0    -1  
@@ -2379,7 +2032,7 @@ U 5 1 5FBDFBA7
 P 9350 10350
 F 0 "U9" H 9400 10700 50  0000 L CNN
 F 1 "74HC08" H 9400 10000 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 9350 10350 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 9350 10350 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 9350 10350 50  0001 C CNN
 	5    9350 10350
 	1    0    0    -1  
@@ -2430,7 +2083,7 @@ U 1 1 624E3EE7
 P 3050 9950
 F 0 "C2" H 3142 9996 50  0000 L CNN
 F 1 "0.1u" H 3142 9905 50  0000 L CNN
-F 2 "" H 3050 9950 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H 3050 9950 50  0001 C CNN
 F 3 "~" H 3050 9950 50  0001 C CNN
 	1    3050 9950
 	1    0    0    -1  
@@ -2441,7 +2094,7 @@ U 1 1 624E410B
 P 3400 9950
 F 0 "C3" H 3492 9996 50  0000 L CNN
 F 1 "0.1u" H 3492 9905 50  0000 L CNN
-F 2 "" H 3400 9950 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H 3400 9950 50  0001 C CNN
 F 3 "~" H 3400 9950 50  0001 C CNN
 	1    3400 9950
 	1    0    0    -1  
@@ -2452,7 +2105,7 @@ U 1 1 624E43A6
 P 3750 9950
 F 0 "C4" H 3842 9996 50  0000 L CNN
 F 1 "0.1u" H 3842 9905 50  0000 L CNN
-F 2 "" H 3750 9950 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H 3750 9950 50  0001 C CNN
 F 3 "~" H 3750 9950 50  0001 C CNN
 	1    3750 9950
 	1    0    0    -1  
@@ -2463,7 +2116,7 @@ U 1 1 624E462B
 P 4100 9950
 F 0 "C5" H 4192 9996 50  0000 L CNN
 F 1 "0.1u" H 4192 9905 50  0000 L CNN
-F 2 "" H 4100 9950 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H 4100 9950 50  0001 C CNN
 F 3 "~" H 4100 9950 50  0001 C CNN
 	1    4100 9950
 	1    0    0    -1  
@@ -2474,7 +2127,7 @@ U 1 1 624E4875
 P 4450 9950
 F 0 "C6" H 4542 9996 50  0000 L CNN
 F 1 "0.1u" H 4542 9905 50  0000 L CNN
-F 2 "" H 4450 9950 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H 4450 9950 50  0001 C CNN
 F 3 "~" H 4450 9950 50  0001 C CNN
 	1    4450 9950
 	1    0    0    -1  
@@ -2485,7 +2138,7 @@ U 1 1 624E4B00
 P 4800 9950
 F 0 "C7" H 4892 9996 50  0000 L CNN
 F 1 "0.1u" H 4892 9905 50  0000 L CNN
-F 2 "" H 4800 9950 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H 4800 9950 50  0001 C CNN
 F 3 "~" H 4800 9950 50  0001 C CNN
 	1    4800 9950
 	1    0    0    -1  
@@ -2558,7 +2211,7 @@ U 1 1 626857F7
 P 4800 10750
 F 0 "C13" H 4708 10796 50  0000 R CNN
 F 1 "0.1u" H 4708 10705 50  0000 R CNN
-F 2 "" H 4800 10750 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H 4800 10750 50  0001 C CNN
 F 3 "~" H 4800 10750 50  0001 C CNN
 	1    4800 10750
 	-1   0    0    -1  
@@ -2569,7 +2222,7 @@ U 1 1 626857FD
 P 4450 10750
 F 0 "C12" H 4358 10796 50  0000 R CNN
 F 1 "0.1u" H 4358 10705 50  0000 R CNN
-F 2 "" H 4450 10750 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H 4450 10750 50  0001 C CNN
 F 3 "~" H 4450 10750 50  0001 C CNN
 	1    4450 10750
 	-1   0    0    -1  
@@ -2580,7 +2233,7 @@ U 1 1 62685803
 P 4100 10750
 F 0 "C11" H 4008 10796 50  0000 R CNN
 F 1 "0.1u" H 4008 10705 50  0000 R CNN
-F 2 "" H 4100 10750 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H 4100 10750 50  0001 C CNN
 F 3 "~" H 4100 10750 50  0001 C CNN
 	1    4100 10750
 	-1   0    0    -1  
@@ -2591,7 +2244,7 @@ U 1 1 62685809
 P 3750 10750
 F 0 "C10" H 3658 10796 50  0000 R CNN
 F 1 "0.1u" H 3658 10705 50  0000 R CNN
-F 2 "" H 3750 10750 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H 3750 10750 50  0001 C CNN
 F 3 "~" H 3750 10750 50  0001 C CNN
 	1    3750 10750
 	-1   0    0    -1  
@@ -2602,7 +2255,7 @@ U 1 1 6268580F
 P 3400 10750
 F 0 "C9" H 3308 10796 50  0000 R CNN
 F 1 "0.1u" H 3308 10705 50  0000 R CNN
-F 2 "" H 3400 10750 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H 3400 10750 50  0001 C CNN
 F 3 "~" H 3400 10750 50  0001 C CNN
 	1    3400 10750
 	-1   0    0    -1  
@@ -2669,7 +2322,7 @@ U 1 1 62685815
 P 3050 10750
 F 0 "C8" H 2958 10796 50  0000 R CNN
 F 1 "0.1u" H 2958 10705 50  0000 R CNN
-F 2 "" H 3050 10750 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H 3050 10750 50  0001 C CNN
 F 3 "~" H 3050 10750 50  0001 C CNN
 	1    3050 10750
 	-1   0    0    -1  
@@ -2677,28 +2330,28 @@ $EndComp
 $Comp
 L Device:LED_RCBG D11
 U 1 1 6275168E
-P 5800 7950
-F 0 "D11" H 5800 8447 50  0000 C CNN
-F 1 "LED_RCBG" H 5800 8356 50  0000 C CNN
-F 2 "" H 5800 7900 50  0001 C CNN
-F 3 "~" H 5800 7900 50  0001 C CNN
-	1    5800 7950
+P 6600 7950
+F 0 "D11" H 6600 8447 50  0000 C CNN
+F 1 "LED_RCBG" H 6600 8356 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 6600 7900 50  0001 C CNN
+F 3 "~" H 6600 7900 50  0001 C CNN
+	1    6600 7950
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x18_Odd_Even J7
+L Connector_Generic:Conn_02x18_Odd_Even J9
 U 1 1 6275479F
 P 1500 7700
-F 0 "J7" H 1550 8717 50  0000 C CNN
+F 0 "J9" H 1550 8717 50  0000 C CNN
 F 1 "MEGA_22-53" H 1550 8626 50  0000 C CNN
-F 2 "" H 1500 7700 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x18_P2.54mm_Vertical" H 1500 7700 50  0001 C CNN
 F 3 "~" H 1500 7700 50  0001 C CNN
 	1    1500 7700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1300 7000 800  7000
-Text Label 800  7000 0    50   ~ 0
+	1300 7100 800  7100
+Text Label 800  7100 0    50   ~ 0
 LED1R
 $Comp
 L power:+5V #PWR0105
@@ -2731,7 +2384,7 @@ Wire Wire Line
 Wire Wire Line
 	1900 6900 1900 6800
 Wire Wire Line
-	1900 8600 1800 8600
+	1850 8600 1800 8600
 Wire Wire Line
 	1300 8600 1200 8600
 $Comp
@@ -2740,7 +2393,7 @@ U 1 1 62A296DF
 P 12400 7750
 F 0 "J31" H 12480 7792 50  0000 L CNN
 F 1 "S01" H 12480 7701 50  0000 L CNN
-F 2 "" H 12400 7750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 12400 7750 50  0001 C CNN
 F 3 "~" H 12400 7750 50  0001 C CNN
 	1    12400 7750
 	1    0    0    -1  
@@ -2781,7 +2434,7 @@ U 1 1 62C4C0B9
 P 13400 7750
 F 0 "J32" H 13480 7792 50  0000 L CNN
 F 1 "S02" H 13480 7701 50  0000 L CNN
-F 2 "" H 13400 7750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 13400 7750 50  0001 C CNN
 F 3 "~" H 13400 7750 50  0001 C CNN
 	1    13400 7750
 	1    0    0    -1  
@@ -2822,7 +2475,7 @@ U 1 1 62D86B8C
 P 14400 7750
 F 0 "J33" H 14480 7792 50  0000 L CNN
 F 1 "S03" H 14480 7701 50  0000 L CNN
-F 2 "" H 14400 7750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 14400 7750 50  0001 C CNN
 F 3 "~" H 14400 7750 50  0001 C CNN
 	1    14400 7750
 	1    0    0    -1  
@@ -2863,7 +2516,7 @@ U 1 1 62D86BA2
 P 12400 8500
 F 0 "J34" H 12480 8542 50  0000 L CNN
 F 1 "S04" H 12480 8451 50  0000 L CNN
-F 2 "" H 12400 8500 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 12400 8500 50  0001 C CNN
 F 3 "~" H 12400 8500 50  0001 C CNN
 	1    12400 8500
 	1    0    0    -1  
@@ -2904,7 +2557,7 @@ U 1 1 62DC7975
 P 13400 8500
 F 0 "J35" H 13480 8542 50  0000 L CNN
 F 1 "S05" H 13480 8451 50  0000 L CNN
-F 2 "" H 13400 8500 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 13400 8500 50  0001 C CNN
 F 3 "~" H 13400 8500 50  0001 C CNN
 	1    13400 8500
 	1    0    0    -1  
@@ -2945,7 +2598,7 @@ U 1 1 62F629D2
 P 14400 8500
 F 0 "J36" H 14480 8542 50  0000 L CNN
 F 1 "S06" H 14480 8451 50  0000 L CNN
-F 2 "" H 14400 8500 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 14400 8500 50  0001 C CNN
 F 3 "~" H 14400 8500 50  0001 C CNN
 	1    14400 8500
 	1    0    0    -1  
@@ -2986,7 +2639,7 @@ U 1 1 62FA5344
 P 12400 9150
 F 0 "J37" H 12480 9192 50  0000 L CNN
 F 1 "S07" H 12480 9101 50  0000 L CNN
-F 2 "" H 12400 9150 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 12400 9150 50  0001 C CNN
 F 3 "~" H 12400 9150 50  0001 C CNN
 	1    12400 9150
 	1    0    0    -1  
@@ -3027,7 +2680,7 @@ U 1 1 62FA535A
 P 13400 9150
 F 0 "J38" H 13480 9192 50  0000 L CNN
 F 1 "S08" H 13480 9101 50  0000 L CNN
-F 2 "" H 13400 9150 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 13400 9150 50  0001 C CNN
 F 3 "~" H 13400 9150 50  0001 C CNN
 	1    13400 9150
 	1    0    0    -1  
@@ -3068,7 +2721,7 @@ U 1 1 62FA5370
 P 14400 9150
 F 0 "J39" H 14480 9192 50  0000 L CNN
 F 1 "S09" H 14480 9101 50  0000 L CNN
-F 2 "" H 14400 9150 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 14400 9150 50  0001 C CNN
 F 3 "~" H 14400 9150 50  0001 C CNN
 	1    14400 9150
 	1    0    0    -1  
@@ -3106,16 +2759,16 @@ SENSOR09
 $Comp
 L Device:C_Small C20
 U 1 1 6332365D
-P 2050 1300
-F 0 "C20" H 2142 1346 50  0000 L CNN
-F 1 "0.1u" H 2142 1255 50  0000 L CNN
-F 2 "" H 2050 1300 50  0001 C CNN
-F 3 "~" H 2050 1300 50  0001 C CNN
-	1    2050 1300
+P 2100 10000
+F 0 "C20" H 2192 10046 50  0000 L CNN
+F 1 "0.1u" H 2192 9955 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H 2100 10000 50  0001 C CNN
+F 3 "~" H 2100 10000 50  0001 C CNN
+	1    2100 10000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2050 1200 2050 1150
+	2100 9900 2100 9850
 $Comp
 L Connector_Generic:Conn_01x08 J3
 U 1 1 6347BE03
@@ -3141,7 +2794,7 @@ U 1 1 63F08AF5
 P 15450 7850
 F 0 "J40" H 15530 7842 50  0000 L CNN
 F 1 "S10" H 15530 7751 50  0000 L CNN
-F 2 "" H 15450 7850 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 15450 7850 50  0001 C CNN
 F 3 "~" H 15450 7850 50  0001 C CNN
 	1    15450 7850
 	1    0    0    -1  
@@ -3194,7 +2847,7 @@ U 1 1 6418E64D
 P 4700 7850
 F 0 "SW11" H 4700 8175 50  0000 C CNN
 F 1 "SW_DPST" H 4700 8084 50  0000 C CNN
-F 2 "" H 4700 7850 50  0001 C CNN
+F 2 "MyLib:DTS-6-V-2" H 4700 7850 50  0001 C CNN
 F 3 "~" H 4700 7850 50  0001 C CNN
 	1    4700 7850
 	1    0    0    -1  
@@ -3228,7 +2881,7 @@ U 1 1 6440A99F
 P 4700 8800
 F 0 "SW12" H 4700 9125 50  0000 C CNN
 F 1 "SW_DPST" H 4700 9034 50  0000 C CNN
-F 2 "" H 4700 8800 50  0001 C CNN
+F 2 "MyLib:DTS-6-V-2" H 4700 8800 50  0001 C CNN
 F 3 "~" H 4700 8800 50  0001 C CNN
 	1    4700 8800
 	1    0    0    -1  
@@ -3259,67 +2912,67 @@ SW12
 $Comp
 L power:GND #PWR0129
 U 1 1 644525FB
-P 6100 8050
-F 0 "#PWR0129" H 6100 7800 50  0001 C CNN
-F 1 "GND" H 6105 7877 50  0000 C CNN
-F 2 "" H 6100 8050 50  0001 C CNN
-F 3 "" H 6100 8050 50  0001 C CNN
-	1    6100 8050
+P 6900 8050
+F 0 "#PWR0129" H 6900 7800 50  0001 C CNN
+F 1 "GND" H 6905 7877 50  0000 C CNN
+F 2 "" H 6900 8050 50  0001 C CNN
+F 3 "" H 6900 8050 50  0001 C CNN
+	1    6900 8050
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	6100 8050 6100 7950
+	6900 8050 6900 7950
 Wire Wire Line
-	6100 7950 6000 7950
+	6900 7950 6800 7950
 Wire Wire Line
-	5600 7750 5200 7750
-Text Label 5200 7750 0    50   ~ 0
+	6000 7750 5600 7750
+Text Label 5600 7750 0    50   ~ 0
 LED1R
 Wire Wire Line
-	5600 7950 5200 7950
-Text Label 5200 7950 0    50   ~ 0
+	6000 7950 5600 7950
+Text Label 5600 7950 0    50   ~ 0
 LED1G
 Wire Wire Line
-	5600 8150 5200 8150
-Text Label 5200 8150 0    50   ~ 0
+	6000 8150 5600 8150
+Text Label 5600 8150 0    50   ~ 0
 LED1B
 $Comp
 L Device:LED_RCBG D12
 U 1 1 6464E662
-P 5800 8900
-F 0 "D12" H 5800 9397 50  0000 C CNN
-F 1 "LED_RCBG" H 5800 9306 50  0000 C CNN
-F 2 "" H 5800 8850 50  0001 C CNN
-F 3 "~" H 5800 8850 50  0001 C CNN
-	1    5800 8900
+P 6600 8900
+F 0 "D12" H 6600 9397 50  0000 C CNN
+F 1 "LED_RCBG" H 6600 9306 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 6600 8850 50  0001 C CNN
+F 3 "~" H 6600 8850 50  0001 C CNN
+	1    6600 8900
 	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0130
 U 1 1 6464E668
-P 6100 9000
-F 0 "#PWR0130" H 6100 8750 50  0001 C CNN
-F 1 "GND" H 6105 8827 50  0000 C CNN
-F 2 "" H 6100 9000 50  0001 C CNN
-F 3 "" H 6100 9000 50  0001 C CNN
-	1    6100 9000
+P 6900 9000
+F 0 "#PWR0130" H 6900 8750 50  0001 C CNN
+F 1 "GND" H 6905 8827 50  0000 C CNN
+F 2 "" H 6900 9000 50  0001 C CNN
+F 3 "" H 6900 9000 50  0001 C CNN
+	1    6900 9000
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	6100 9000 6100 8900
+	6900 9000 6900 8900
 Wire Wire Line
-	6100 8900 6000 8900
+	6900 8900 6800 8900
 Wire Wire Line
-	5600 8700 5200 8700
-Text Label 5200 8700 0    50   ~ 0
+	6000 8700 5600 8700
+Text Label 5600 8700 0    50   ~ 0
 LED2R
 Wire Wire Line
-	5600 8900 5200 8900
-Text Label 5200 8900 0    50   ~ 0
+	6000 8900 5600 8900
+Text Label 5600 8900 0    50   ~ 0
 LED2G
 Wire Wire Line
-	5600 9100 5200 9100
-Text Label 5200 9100 0    50   ~ 0
+	6000 9100 5600 9100
+Text Label 5600 9100 0    50   ~ 0
 LED2B
 $Comp
 L Connector_Generic:Conn_01x03 J41
@@ -3327,7 +2980,7 @@ U 1 1 6485AC5D
 P 8550 8000
 F 0 "J41" H 8630 8042 50  0000 L CNN
 F 1 "SV" H 8630 7951 50  0000 L CNN
-F 2 "" H 8550 8000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8550 8000 50  0001 C CNN
 F 3 "~" H 8550 8000 50  0001 C CNN
 	1    8550 8000
 	1    0    0    -1  
@@ -3372,7 +3025,7 @@ U 1 1 64993B85
 P 9550 8000
 F 0 "J42" H 9630 8042 50  0000 L CNN
 F 1 "SV" H 9630 7951 50  0000 L CNN
-F 2 "" H 9550 8000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9550 8000 50  0001 C CNN
 F 3 "~" H 9550 8000 50  0001 C CNN
 	1    9550 8000
 	1    0    0    -1  
@@ -3417,7 +3070,7 @@ U 1 1 64A7C245
 P 10550 8000
 F 0 "J43" H 10630 8042 50  0000 L CNN
 F 1 "SV" H 10630 7951 50  0000 L CNN
-F 2 "" H 10550 8000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10550 8000 50  0001 C CNN
 F 3 "~" H 10550 8000 50  0001 C CNN
 	1    10550 8000
 	1    0    0    -1  
@@ -3462,7 +3115,7 @@ U 1 1 64ACEA71
 P 8550 8800
 F 0 "J44" H 8630 8842 50  0000 L CNN
 F 1 "SV" H 8630 8751 50  0000 L CNN
-F 2 "" H 8550 8800 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8550 8800 50  0001 C CNN
 F 3 "~" H 8550 8800 50  0001 C CNN
 	1    8550 8800
 	1    0    0    -1  
@@ -3507,7 +3160,7 @@ U 1 1 64ACEA89
 P 9550 8800
 F 0 "J45" H 9630 8842 50  0000 L CNN
 F 1 "SV" H 9630 8751 50  0000 L CNN
-F 2 "" H 9550 8800 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9550 8800 50  0001 C CNN
 F 3 "~" H 9550 8800 50  0001 C CNN
 	1    9550 8800
 	1    0    0    -1  
@@ -3552,7 +3205,7 @@ U 1 1 64ACEAA1
 P 10550 8800
 F 0 "J46" H 10630 8842 50  0000 L CNN
 F 1 "SV" H 10630 8751 50  0000 L CNN
-F 2 "" H 10550 8800 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10550 8800 50  0001 C CNN
 F 3 "~" H 10550 8800 50  0001 C CNN
 	1    10550 8800
 	1    0    0    -1  
@@ -3593,125 +3246,119 @@ Text Label 9950 8700 0    50   ~ 0
 SV6
 Wire Wire Line
 	2300 7000 1800 7000
-Text Label 2300 7000 2    50   ~ 0
+Text Label 2300 7200 2    50   ~ 0
 LED2R
-Wire Wire Line
-	1300 7100 800  7100
-Text Label 800  7100 0    50   ~ 0
-LED1G
 Wire Wire Line
 	1300 7200 800  7200
 Text Label 800  7200 0    50   ~ 0
-LED1B
+LED1G
 Wire Wire Line
 	1300 7300 800  7300
 Text Label 800  7300 0    50   ~ 0
+LED1B
+Wire Wire Line
+	1300 7000 800  7000
+Text Label 800  7000 0    50   ~ 0
 SW11
 Wire Wire Line
 	1300 7400 800  7400
-Text Label 800  7400 0    50   ~ 0
+Text Label 800  4850 0    50   ~ 0
 SENSOR01
 Wire Wire Line
 	1300 7500 800  7500
-Text Label 800  7500 0    50   ~ 0
+Text Label 800  5050 0    50   ~ 0
 SENSOR03
 Wire Wire Line
 	1300 7600 800  7600
-Text Label 800  7600 0    50   ~ 0
+Text Label 800  5250 0    50   ~ 0
 SENSOR05
 Wire Wire Line
 	1300 7700 800  7700
-Text Label 800  7700 0    50   ~ 0
+Text Label 800  5450 0    50   ~ 0
 SENSOR07
 Wire Wire Line
 	1300 7800 800  7800
-Text Label 800  7800 0    50   ~ 0
+Text Label 2550 8900 2    50   ~ 0
 SENSOR09
 Wire Wire Line
 	1300 7900 800  7900
-Text Label 800  7900 0    50   ~ 0
+Text Label 800  7400 0    50   ~ 0
 WSENSOR
 Wire Wire Line
 	1300 8000 800  8000
-Text Label 800  8000 0    50   ~ 0
+Text Label 800  7600 0    50   ~ 0
 CSENSOR
 Wire Wire Line
 	1300 8100 800  8100
-Text Label 800  8100 0    50   ~ 0
+Text Label 800  7800 0    50   ~ 0
 SV1
 Wire Wire Line
 	1300 8200 800  8200
-Text Label 800  8200 0    50   ~ 0
+Text Label 800  8000 0    50   ~ 0
 SV3
 Wire Wire Line
 	1300 8300 800  8300
-Text Label 800  8300 0    50   ~ 0
+Text Label 800  8200 0    50   ~ 0
 SV5
 Wire Wire Line
 	2300 7100 1800 7100
-Text Label 2300 7100 2    50   ~ 0
+Text Label 2300 7300 2    50   ~ 0
 LED2G
 Wire Wire Line
 	2300 7200 1800 7200
-Text Label 2300 7200 2    50   ~ 0
+Text Label 2300 7400 2    50   ~ 0
 LED2B
 Wire Wire Line
 	2300 7300 1800 7300
-Text Label 2300 7300 2    50   ~ 0
+Text Label 2300 7100 2    50   ~ 0
 SW12
 Wire Wire Line
 	2300 7400 1800 7400
-Text Label 2300 7400 2    50   ~ 0
+Text Label 800  4950 0    50   ~ 0
 SENSOR02
 Wire Wire Line
-	2300 7500 1800 7500
-Text Label 2300 7500 2    50   ~ 0
+	800  4850 1300 4850
+Text Label 800  5150 0    50   ~ 0
 SENSOR04
 Wire Wire Line
-	2300 7600 1800 7600
-Text Label 2300 7600 2    50   ~ 0
+	800  4950 1300 4950
+Text Label 800  5350 0    50   ~ 0
 SENSOR06
 Wire Wire Line
-	2300 7700 1800 7700
-Text Label 2300 7700 2    50   ~ 0
+	800  5050 1300 5050
+Text Label 800  5550 0    50   ~ 0
 SENSOR08
 Wire Wire Line
-	2300 7900 1800 7900
-Text Label 2300 7900 2    50   ~ 0
+	800  5250 1300 5250
+Text Label 800  7500 0    50   ~ 0
 RSENSOR
 Wire Wire Line
-	2300 8000 1800 8000
-Text Label 2300 8000 2    50   ~ 0
+	800  5350 1300 5350
+Text Label 800  7700 0    50   ~ 0
 LSENSOR
 Wire Wire Line
-	2300 8100 1800 8100
-Text Label 2300 8100 2    50   ~ 0
+	800  5450 1300 5450
+Text Label 800  7900 0    50   ~ 0
 SV2
 Wire Wire Line
-	2300 8200 1800 8200
-Text Label 2300 8200 2    50   ~ 0
+	800  5550 1300 5550
+Text Label 800  8100 0    50   ~ 0
 SV4
-Wire Wire Line
-	2300 8300 1800 8300
-Text Label 2300 8300 2    50   ~ 0
+Text Label 800  8300 0    50   ~ 0
 SV6
 NoConn ~ 1800 8400
 NoConn ~ 1800 8500
 NoConn ~ 1300 8500
 NoConn ~ 1300 8400
-Wire Wire Line
-	850  1200 1200 1200
-Wire Wire Line
-	850  1300 1200 1300
 $Comp
 L 74xx:74HC00 U1
 U 1 1 65464FE4
-P 3600 1550
-F 0 "U1" H 3600 1875 50  0000 C CNN
-F 1 "74HC00" H 3600 1784 50  0000 C CNN
-F 2 "" H 3600 1550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 3600 1550 50  0001 C CNN
-	1    3600 1550
+P 3600 3950
+F 0 "U1" H 3600 4275 50  0000 C CNN
+F 1 "74HC00" H 3600 4184 50  0000 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 3600 3950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 3600 3950 50  0001 C CNN
+	1    3600 3950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -3722,78 +3369,78 @@ Wire Wire Line
 $Comp
 L 74xx:74HC00 U1
 U 2 1 6563F818
-P 3600 2750
-F 0 "U1" H 3600 3075 50  0000 C CNN
-F 1 "74HC00" H 3600 2984 50  0000 C CNN
-F 2 "" H 3600 2750 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 3600 2750 50  0001 C CNN
-	2    3600 2750
+P 3600 5150
+F 0 "U1" H 3600 5475 50  0000 C CNN
+F 1 "74HC00" H 3600 5384 50  0000 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 3600 5150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 3600 5150 50  0001 C CNN
+	2    3600 5150
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74HC00 U1
 U 3 1 656405C9
-P 3600 3950
-F 0 "U1" H 3600 4275 50  0000 C CNN
-F 1 "74HC00" H 3600 4184 50  0000 C CNN
-F 2 "" H 3600 3950 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 3600 3950 50  0001 C CNN
-	3    3600 3950
+P 3600 1550
+F 0 "U1" H 3600 1875 50  0000 C CNN
+F 1 "74HC00" H 3600 1784 50  0000 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 3600 1550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 3600 1550 50  0001 C CNN
+	3    3600 1550
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74HC00 U1
 U 4 1 656416DC
-P 3600 5150
-F 0 "U1" H 3600 5475 50  0000 C CNN
-F 1 "74HC00" H 3600 5384 50  0000 C CNN
-F 2 "" H 3600 5150 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 3600 5150 50  0001 C CNN
-	4    3600 5150
+P 3600 2750
+F 0 "U1" H 3600 3075 50  0000 C CNN
+F 1 "74HC00" H 3600 2984 50  0000 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 3600 2750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 3600 2750 50  0001 C CNN
+	4    3600 2750
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74HC00 U4
 U 1 1 6564275D
-P 6100 1550
-F 0 "U4" H 6100 1875 50  0000 C CNN
-F 1 "74HC00" H 6100 1784 50  0000 C CNN
-F 2 "" H 6100 1550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 6100 1550 50  0001 C CNN
-	1    6100 1550
+P 6100 3950
+F 0 "U4" H 6100 4275 50  0000 C CNN
+F 1 "74HC00" H 6100 4184 50  0000 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 6100 3950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 6100 3950 50  0001 C CNN
+	1    6100 3950
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74HC00 U4
 U 2 1 65643B17
-P 6100 2750
-F 0 "U4" H 6100 3075 50  0000 C CNN
-F 1 "74HC00" H 6100 2984 50  0000 C CNN
-F 2 "" H 6100 2750 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 6100 2750 50  0001 C CNN
-	2    6100 2750
+P 6100 5150
+F 0 "U4" H 6100 5475 50  0000 C CNN
+F 1 "74HC00" H 6100 5384 50  0000 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 6100 5150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 6100 5150 50  0001 C CNN
+	2    6100 5150
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74HC00 U4
 U 3 1 656448C8
-P 6100 3950
-F 0 "U4" H 6100 4275 50  0000 C CNN
-F 1 "74HC00" H 6100 4184 50  0000 C CNN
-F 2 "" H 6100 3950 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 6100 3950 50  0001 C CNN
-	3    6100 3950
+P 6100 1550
+F 0 "U4" H 6100 1875 50  0000 C CNN
+F 1 "74HC00" H 6100 1784 50  0000 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 6100 1550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 6100 1550 50  0001 C CNN
+	3    6100 1550
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74HC00 U4
 U 4 1 656459E5
-P 6100 5150
-F 0 "U4" H 6100 5475 50  0000 C CNN
-F 1 "74HC00" H 6100 5384 50  0000 C CNN
-F 2 "" H 6100 5150 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 6100 5150 50  0001 C CNN
-	4    6100 5150
+P 6100 2750
+F 0 "U4" H 6100 3075 50  0000 C CNN
+F 1 "74HC00" H 6100 2984 50  0000 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 6100 2750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 6100 2750 50  0001 C CNN
+	4    6100 2750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -3822,22 +3469,22 @@ Connection ~ 5800 2750
 Wire Wire Line
 	5800 2750 5800 2850
 Wire Wire Line
-	5800 3850 5800 3950
-Connection ~ 5800 3950
-Wire Wire Line
-	5800 3950 5800 4050
-Wire Wire Line
 	5800 5050 5800 5150
 Connection ~ 5800 5150
 Wire Wire Line
 	5800 5150 5800 5250
+Wire Wire Line
+	5800 3850 5800 3950
+Connection ~ 5800 3950
+Wire Wire Line
+	5800 3950 5800 4050
 $Comp
 L 74xx:74HC00 U1
 U 5 1 658F249F
 P 5350 10350
 F 0 "U1" H 5400 10700 50  0000 L CNN
 F 1 "74HC00" H 5400 10000 50  0000 L CNN
-F 2 "" H 5350 10350 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 5350 10350 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 5350 10350 50  0001 C CNN
 	5    5350 10350
 	1    0    0    -1  
@@ -3858,7 +3505,7 @@ U 5 1 658F4DB4
 P 6850 10350
 F 0 "U4" H 6900 10700 50  0000 L CNN
 F 1 "74HC00" H 6900 10000 50  0000 L CNN
-F 2 "" H 6850 10350 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 6850 10350 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 6850 10350 50  0001 C CNN
 	5    6850 10350
 	1    0    0    -1  
@@ -3875,7 +3522,7 @@ U 5 1 658F5F37
 P 8850 10350
 F 0 "U8" H 8900 10700 50  0000 L CNN
 F 1 "74HC00" H 8900 10000 50  0000 L CNN
-F 2 "" H 8850 10350 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 8850 10350 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 8850 10350 50  0001 C CNN
 	5    8850 10350
 	1    0    0    -1  
@@ -3896,7 +3543,7 @@ U 5 1 658F7384
 P 10350 10350
 F 0 "U11" H 10400 10700 50  0000 L CNN
 F 1 "74HC00" H 10400 10000 50  0000 L CNN
-F 2 "" H 10350 10350 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 10350 10350 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 10350 10350 50  0001 C CNN
 	5    10350 10350
 	1    0    0    -1  
@@ -3907,38 +3554,16 @@ Wire Wire Line
 Connection ~ 10350 10850
 Wire Wire Line
 	10350 10850 10850 10850
-$Comp
-L 74xx:74HC00 U8
-U 1 1 658F8462
-P 11600 950
-F 0 "U8" H 11600 1275 50  0000 C CNN
-F 1 "74HC00" H 11600 1184 50  0000 C CNN
-F 2 "" H 11600 950 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 11600 950 50  0001 C CNN
-	1    11600 950 
-	1    0    0    -1  
-$EndComp
 Connection ~ 11300 1050
 $Comp
 L 74xx:74HC00 U8
-U 2 1 658FA0AC
+U 3 1 658FB1FB
 P 11600 1950
 F 0 "U8" H 11600 2275 50  0000 C CNN
 F 1 "74HC00" H 11600 2184 50  0000 C CNN
-F 2 "" H 11600 1950 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 11600 1950 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 11600 1950 50  0001 C CNN
-	2    11600 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74HC00 U8
-U 3 1 658FB1FB
-P 11600 2650
-F 0 "U8" H 11600 2975 50  0000 C CNN
-F 1 "74HC00" H 11600 2884 50  0000 C CNN
-F 2 "" H 11600 2650 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 11600 2650 50  0001 C CNN
-	3    11600 2650
+	3    11600 1950
 	1    0    0    -1  
 $EndComp
 Connection ~ 11300 2750
@@ -3947,16 +3572,14 @@ Wire Wire Line
 $Comp
 L 74xx:74HC00 U8
 U 4 1 658FC6FE
-P 11600 3650
-F 0 "U8" H 11600 3975 50  0000 C CNN
-F 1 "74HC00" H 11600 3884 50  0000 C CNN
-F 2 "" H 11600 3650 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 11600 3650 50  0001 C CNN
-	4    11600 3650
+P 11600 950
+F 0 "U8" H 11600 1275 50  0000 C CNN
+F 1 "74HC00" H 11600 1184 50  0000 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 11600 950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 11600 950 50  0001 C CNN
+	4    11600 950 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	11300 1050 11300 1750
 Wire Wire Line
 	11200 1150 12000 1150
 Wire Wire Line
@@ -3981,7 +3604,7 @@ U 1 1 65AF1117
 P 11600 4350
 F 0 "U11" H 11600 4675 50  0000 C CNN
 F 1 "74HC00" H 11600 4584 50  0000 C CNN
-F 2 "" H 11600 4350 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 11600 4350 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 11600 4350 50  0001 C CNN
 	1    11600 4350
 	1    0    0    -1  
@@ -3995,7 +3618,7 @@ U 2 1 65AF230E
 P 11600 5350
 F 0 "U11" H 11600 5675 50  0000 C CNN
 F 1 "74HC00" H 11600 5584 50  0000 C CNN
-F 2 "" H 11600 5350 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 11600 5350 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 11600 5350 50  0001 C CNN
 	2    11600 5350
 	1    0    0    -1  
@@ -4006,7 +3629,7 @@ U 3 1 65AF326B
 P 11600 6050
 F 0 "U11" H 11600 6375 50  0000 C CNN
 F 1 "74HC00" H 11600 6284 50  0000 C CNN
-F 2 "" H 11600 6050 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 11600 6050 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 11600 6050 50  0001 C CNN
 	3    11600 6050
 	1    0    0    -1  
@@ -4018,7 +3641,7 @@ U 4 1 65AF4691
 P 11600 7050
 F 0 "U11" H 11600 7375 50  0000 C CNN
 F 1 "74HC00" H 11600 7284 50  0000 C CNN
-F 2 "" H 11600 7050 50  0001 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 11600 7050 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 11600 7050 50  0001 C CNN
 	4    11600 7050
 	1    0    0    -1  
@@ -4055,7 +3678,7 @@ U 1 1 65E7A579
 P 8000 1750
 F 0 "C21" H 8092 1796 50  0000 L CNN
 F 1 "0.1u" H 8092 1705 50  0000 L CNN
-F 2 "" H 8000 1750 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H 8000 1750 50  0001 C CNN
 F 3 "~" H 8000 1750 50  0001 C CNN
 	1    8000 1750
 	1    0    0    -1  
@@ -4066,7 +3689,7 @@ U 1 1 65E7B027
 P 8000 3450
 F 0 "C22" H 8092 3496 50  0000 L CNN
 F 1 "0.1u" H 8092 3405 50  0000 L CNN
-F 2 "" H 8000 3450 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H 8000 3450 50  0001 C CNN
 F 3 "~" H 8000 3450 50  0001 C CNN
 	1    8000 3450
 	1    0    0    -1  
@@ -4077,7 +3700,7 @@ U 1 1 65E7B2E8
 P 8000 5150
 F 0 "C23" H 8092 5196 50  0000 L CNN
 F 1 "0.1u" H 8092 5105 50  0000 L CNN
-F 2 "" H 8000 5150 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H 8000 5150 50  0001 C CNN
 F 3 "~" H 8000 5150 50  0001 C CNN
 	1    8000 5150
 	1    0    0    -1  
@@ -4088,13 +3711,11 @@ U 1 1 65E7B5C3
 P 8000 6850
 F 0 "C24" H 8092 6896 50  0000 L CNN
 F 1 "0.1u" H 8092 6805 50  0000 L CNN
-F 2 "" H 8000 6850 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm" H 8000 6850 50  0001 C CNN
 F 3 "~" H 8000 6850 50  0001 C CNN
 	1    8000 6850
 	1    0    0    -1  
 $EndComp
-Wire Notes Line
-	2600 3050 7600 3050
 Wire Notes Line
 	2600 5450 7600 5450
 Wire Notes Line
@@ -4110,42 +3731,345 @@ Wire Notes Line
 Wire Notes Line
 	7800 600  7800 7300
 $Comp
-L Connector_Generic:Conn_01x02 J8
+L Connector_Generic:Conn_01x02 SW13
 U 1 1 665CA5FC
-P 3550 7800
-F 0 "J8" H 3630 7792 50  0000 L CNN
-F 1 "Conn_01x02" H 3630 7701 50  0000 L CNN
-F 2 "" H 3550 7800 50  0001 C CNN
-F 3 "~" H 3550 7800 50  0001 C CNN
-	1    3550 7800
+P 4800 6900
+F 0 "SW13" H 4880 6892 50  0000 L CNN
+F 1 "Conn_01x02" H 4880 6801 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4800 6900 50  0001 C CNN
+F 3 "~" H 4800 6900 50  0001 C CNN
+	1    4800 6900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2300 7800 1800 7800
-Text Label 2300 7800 2    50   ~ 0
-GPIN
+	800  5150 1300 5150
+Text Label 2300 7000 2    50   ~ 0
+SW13
 Wire Wire Line
-	3350 7800 2950 7800
-Text Label 2950 7800 0    50   ~ 0
-GPIN
+	4600 6900 4200 6900
+Text Label 4200 6900 0    50   ~ 0
+SW13
 $Comp
 L power:GND #PWR0143
 U 1 1 66691E99
-P 3300 7950
-F 0 "#PWR0143" H 3300 7700 50  0001 C CNN
-F 1 "GND" H 3305 7777 50  0000 C CNN
-F 2 "" H 3300 7950 50  0001 C CNN
-F 3 "" H 3300 7950 50  0001 C CNN
-	1    3300 7950
+P 4550 7050
+F 0 "#PWR0143" H 4550 6800 50  0001 C CNN
+F 1 "GND" H 4555 6877 50  0000 C CNN
+F 2 "" H 4550 7050 50  0001 C CNN
+F 3 "" H 4550 7050 50  0001 C CNN
+	1    4550 7050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3300 7950 3300 7900
+	4550 7050 4550 7000
 Wire Wire Line
-	3300 7900 3350 7900
+	4550 7000 4600 7000
 Wire Wire Line
 	11300 6950 11300 7050
 Connection ~ 11300 7050
 Wire Wire Line
 	11300 7050 11300 7150
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J2
+U 1 1 613F7D9B
+P 1350 1400
+F 0 "J2" H 1400 1817 50  0000 C CNN
+F 1 "LOGIC POWER SUPPLY" H 1400 1726 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 1350 1400 50  0001 C CNN
+F 3 "~" H 1350 1400 50  0001 C CNN
+	1    1350 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  1200 1150 1200
+Wire Wire Line
+	2700 2150 3200 2150
+Wire Wire Line
+	3200 4550 4000 4550
+Wire Wire Line
+	1150 1200 1150 1300
+Connection ~ 1150 1200
+Connection ~ 1150 1300
+Wire Wire Line
+	1150 1300 1150 1400
+Connection ~ 1150 1400
+Wire Wire Line
+	1150 1400 1150 1500
+Connection ~ 1150 1500
+Wire Wire Line
+	1150 1500 1150 1600
+Wire Wire Line
+	1650 1200 1650 1300
+Connection ~ 1650 1300
+Wire Wire Line
+	1650 1300 1650 1400
+Connection ~ 1650 1400
+Wire Wire Line
+	1650 1400 1650 1500
+Connection ~ 1650 1500
+Wire Wire Line
+	1650 1500 1650 1600
+Wire Wire Line
+	1650 1600 1850 1600
+Connection ~ 1650 1600
+$Comp
+L Connector_Generic:Conn_01x02 J11
+U 1 1 5FE7EAC0
+P 14300 1250
+F 0 "J11" H 14218 1567 50  0000 C CNN
+F 1 "AOUT1" H 14218 1476 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 14300 1250 50  0001 C CNN
+F 3 "~" H 14300 1250 50  0001 C CNN
+	1    14300 1250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J24
+U 1 1 600C03E9
+P 15200 6150
+F 0 "J24" H 15118 6467 50  0000 C CNN
+F 1 "DIGITAL OUT4" H 15118 6376 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 15200 6150 50  0001 C CNN
+F 3 "~" H 15200 6150 50  0001 C CNN
+	1    15200 6150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U2
+U 4 1 5F4C9834
+P 4300 2250
+F 0 "U2" H 4300 2575 50  0000 C CNN
+F 1 "74HC08" H 4300 2484 50  0000 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 4300 2250 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 4300 2250 50  0001 C CNN
+	4    4300 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U2
+U 3 1 5F4E0471
+P 4300 1050
+F 0 "U2" H 4300 1375 50  0000 C CNN
+F 1 "74HC08" H 4300 1284 50  0000 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 4300 1050 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 4300 1050 50  0001 C CNN
+	3    4300 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U2
+U 2 1 5F4E048C
+P 4300 1650
+F 0 "U2" H 4300 1975 50  0000 C CNN
+F 1 "74HC08" H 4300 1884 50  0000 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 4300 1650 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 4300 1650 50  0001 C CNN
+	2    4300 1650
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 62076E01
+P 6150 7750
+F 0 "R5" V 5943 7750 50  0000 C CNN
+F 1 "1k" V 6034 7750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6080 7750 50  0001 C CNN
+F 3 "~" H 6150 7750 50  0001 C CNN
+	1    6150 7750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 62077495
+P 6150 7950
+F 0 "R6" V 5943 7950 50  0000 C CNN
+F 1 "1k" V 6034 7950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6080 7950 50  0001 C CNN
+F 3 "~" H 6150 7950 50  0001 C CNN
+	1    6150 7950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 620776A8
+P 6150 8150
+F 0 "R7" V 5943 8150 50  0000 C CNN
+F 1 "1k" V 6034 8150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6080 8150 50  0001 C CNN
+F 3 "~" H 6150 8150 50  0001 C CNN
+	1    6150 8150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 62077853
+P 6150 8700
+F 0 "R8" V 5943 8700 50  0000 C CNN
+F 1 "1k" V 6034 8700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6080 8700 50  0001 C CNN
+F 3 "~" H 6150 8700 50  0001 C CNN
+	1    6150 8700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 62077C1B
+P 6150 8900
+F 0 "R9" V 5943 8900 50  0000 C CNN
+F 1 "1k" V 6034 8900 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6080 8900 50  0001 C CNN
+F 3 "~" H 6150 8900 50  0001 C CNN
+	1    6150 8900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 62077D9C
+P 6150 9100
+F 0 "R10" V 5943 9100 50  0000 C CNN
+F 1 "1k" V 6034 9100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6080 9100 50  0001 C CNN
+F 3 "~" H 6150 9100 50  0001 C CNN
+	1    6150 9100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6300 7750 6400 7750
+Wire Wire Line
+	6300 7950 6400 7950
+Wire Wire Line
+	6300 8150 6400 8150
+Wire Wire Line
+	6300 8700 6400 8700
+Wire Wire Line
+	6300 8900 6400 8900
+Wire Wire Line
+	6300 9100 6400 9100
+Wire Wire Line
+	1800 8200 2000 8200
+Wire Wire Line
+	1800 8100 2100 8100
+Wire Wire Line
+	1800 8000 2200 8000
+Wire Wire Line
+	1800 7900 2300 7900
+Wire Wire Line
+	1800 7800 2400 7800
+Wire Wire Line
+	1800 7700 2500 7700
+Wire Wire Line
+	1800 7600 2600 7600
+Wire Wire Line
+	1800 7500 2700 7500
+Wire Wire Line
+	2000 8300 2000 8200
+Connection ~ 2000 8200
+Wire Wire Line
+	2000 8200 3000 8200
+Wire Wire Line
+	1800 8300 1900 8300
+Wire Wire Line
+	1900 8300 1900 8700
+Wire Wire Line
+	1900 8700 2100 8700
+Wire Wire Line
+	2100 8700 2100 8900
+Wire Wire Line
+	2100 8900 2550 8900
+$Comp
+L Connector_Generic:Conn_01x08 J7
+U 1 1 62DD4D0E
+P 1000 6050
+F 0 "J7" H 1080 6042 50  0000 L CNN
+F 1 "MEGA_A0-A7" H 1080 5951 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 1000 6050 50  0001 C CNN
+F 3 "~" H 1000 6050 50  0001 C CNN
+	1    1000 6050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 800  5750
+NoConn ~ 800  5850
+NoConn ~ 800  5950
+NoConn ~ 800  6050
+NoConn ~ 800  6150
+NoConn ~ 800  6250
+NoConn ~ 800  6350
+NoConn ~ 800  6450
+$Comp
+L Connector_Generic:Conn_01x06 J8
+U 1 1 6311DC4B
+P 2000 5950
+F 0 "J8" H 2080 5942 50  0000 L CNN
+F 1 "MEGA_POWER" H 2080 5851 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 2000 5950 50  0001 C CNN
+F 3 "~" H 2000 5950 50  0001 C CNN
+	1    2000 5950
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1800 5750
+NoConn ~ 1800 5850
+NoConn ~ 1800 6250
+$Comp
+L power:GND #PWR0144
+U 1 1 631DDBD8
+P 1700 6250
+F 0 "#PWR0144" H 1700 6000 50  0001 C CNN
+F 1 "GND" H 1705 6077 50  0000 C CNN
+F 2 "" H 1700 6250 50  0001 C CNN
+F 3 "" H 1700 6250 50  0001 C CNN
+	1    1700 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 6250 1700 6150
+Wire Wire Line
+	1700 6050 1800 6050
+Wire Wire Line
+	1800 6150 1700 6150
+Connection ~ 1700 6150
+Wire Wire Line
+	1700 6150 1700 6050
+NoConn ~ 1800 5950
+Wire Wire Line
+	8000 1100 8000 1600
+Wire Wire Line
+	8000 2800 8000 3300
+Wire Wire Line
+	8000 2800 8100 2800
+Wire Wire Line
+	8000 4500 8000 5000
+Text Label 5000 4050 2    50   ~ 0
+AOUT5B
+Text Label 5000 3450 2    50   ~ 0
+AOUT5A
+Text Label 7500 1050 2    50   ~ 0
+AOUT1A
+Text Label 7500 1650 2    50   ~ 0
+AOUT1B
+$Comp
+L 74xx:74HC00 U8
+U 2 1 658FA0AC
+P 11600 2650
+F 0 "U8" H 11600 2975 50  0000 C CNN
+F 1 "74HC00" H 11600 2884 50  0000 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 11600 2650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 11600 2650 50  0001 C CNN
+	2    11600 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11900 2650 12000 2650
+$Comp
+L 74xx:74HC00 U8
+U 1 1 658F8462
+P 11600 3650
+F 0 "U8" H 11600 3975 50  0000 C CNN
+F 1 "74HC00" H 11600 3884 50  0000 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 11600 3650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 11600 3650 50  0001 C CNN
+	1    11600 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11300 1050 11300 1750
 $EndSCHEMATC
