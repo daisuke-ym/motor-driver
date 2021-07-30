@@ -365,12 +365,12 @@ $EndComp
 $Comp
 L 74xx:74HC14 U7
 U 2 1 5F7672AE
-P 8550 5000
-F 0 "U7" H 8550 5317 50  0000 C CNN
-F 1 "74HC14" H 8550 5226 50  0000 C CNN
-F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 8550 5000 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 8550 5000 50  0001 C CNN
-	2    8550 5000
+P 6800 6050
+F 0 "U7" H 6800 6367 50  0000 C CNN
+F 1 "74HC14" H 6800 6276 50  0000 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 6800 6050 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6800 6050 50  0001 C CNN
+	2    6800 6050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -462,7 +462,7 @@ F 1 "74HC08" H 12300 5484 50  0000 C CNN
 F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 12300 5250 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 12300 5250 50  0001 C CNN
 	4    12300 5250
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L 74xx:74LS08 U10
@@ -627,17 +627,6 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 13300 62
 $EndComp
 $Comp
 L 74xx:74LS08 U13
-U 1 1 5F77F572
-P 12300 6150
-F 0 "U13" H 12300 6475 50  0000 C CNN
-F 1 "74HC08" H 12300 6384 50  0000 C CNN
-F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 12300 6150 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 12300 6150 50  0001 C CNN
-	1    12300 6150
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS08 U13
 U 3 1 5F77F57C
 P 13300 6850
 F 0 "U13" H 13300 7175 50  0000 C CNN
@@ -645,17 +634,6 @@ F 1 "74HC08" H 13300 7084 50  0000 C CNN
 F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 13300 6850 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 13300 6850 50  0001 C CNN
 	3    13300 6850
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS08 U13
-U 4 1 5F77F590
-P 12300 6950
-F 0 "U13" H 12300 7275 50  0000 C CNN
-F 1 "74HC08" H 12300 7184 50  0000 C CNN
-F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 12300 6950 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 12300 6950 50  0001 C CNN
-	4    12300 6950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -735,12 +713,12 @@ $EndComp
 $Comp
 L 74xx:74HC14 U7
 U 5 1 5F77F5F8
-P 8550 3300
-F 0 "U7" H 8550 3617 50  0000 C CNN
-F 1 "74HC14" H 8550 3526 50  0000 C CNN
-F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 8550 3300 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 8550 3300 50  0001 C CNN
-	5    8550 3300
+P 6800 6650
+F 0 "U7" H 6800 6967 50  0000 C CNN
+F 1 "74HC14" H 6800 6876 50  0000 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 6800 6650 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6800 6650 50  0001 C CNN
+	5    6800 6650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1107,45 +1085,31 @@ $EndComp
 $Comp
 L 74xx:74HC14 U7
 U 3 1 5FB4F344
-P 6800 6050
-F 0 "U7" H 6800 6367 50  0000 C CNN
-F 1 "74HC14" H 6800 6276 50  0000 C CNN
-F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 6800 6050 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6800 6050 50  0001 C CNN
-	3    6800 6050
+P 8550 5000
+F 0 "U7" H 8550 5317 50  0000 C CNN
+F 1 "74HC14" H 8550 5226 50  0000 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 8550 5000 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 8550 5000 50  0001 C CNN
+	3    8550 5000
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74HC14 U7
 U 4 1 5FB5006A
-P 6800 6650
-F 0 "U7" H 6800 6967 50  0000 C CNN
-F 1 "74HC14" H 6800 6876 50  0000 C CNN
-F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 6800 6650 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6800 6650 50  0001 C CNN
-	4    6800 6650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR030
-U 1 1 5FB510B7
-P 6400 5950
-F 0 "#PWR030" H 6400 5800 50  0001 C CNN
-F 1 "+5V" H 6415 6123 50  0000 C CNN
-F 2 "" H 6400 5950 50  0001 C CNN
-F 3 "" H 6400 5950 50  0001 C CNN
-	1    6400 5950
+P 8550 3300
+F 0 "U7" H 8550 3617 50  0000 C CNN
+F 1 "74HC14" H 8550 3526 50  0000 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 8550 3300 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 8550 3300 50  0001 C CNN
+	4    8550 3300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	6500 6050 6400 6050
 Wire Wire Line
-	6400 6050 6400 5950
-Wire Wire Line
 	6500 6650 6400 6650
 Wire Wire Line
 	6400 6650 6400 6050
-Connection ~ 6400 6050
 $Comp
 L 74xx:74HC14 U7
 U 7 1 5FBF9815
@@ -3601,12 +3565,12 @@ Wire Wire Line
 $Comp
 L 74xx:74HC00 U11
 U 1 1 65AF1117
-P 11600 4350
-F 0 "U11" H 11600 4675 50  0000 C CNN
-F 1 "74HC00" H 11600 4584 50  0000 C CNN
-F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 11600 4350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 11600 4350 50  0001 C CNN
-	1    11600 4350
+P 11600 7050
+F 0 "U11" H 11600 7375 50  0000 C CNN
+F 1 "74HC00" H 11600 7284 50  0000 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 11600 7050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 11600 7050 50  0001 C CNN
+	1    11600 7050
 	1    0    0    -1  
 $EndComp
 Connection ~ 11300 4450
@@ -3615,35 +3579,35 @@ Wire Wire Line
 $Comp
 L 74xx:74HC00 U11
 U 2 1 65AF230E
-P 11600 5350
-F 0 "U11" H 11600 5675 50  0000 C CNN
-F 1 "74HC00" H 11600 5584 50  0000 C CNN
-F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 11600 5350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 11600 5350 50  0001 C CNN
-	2    11600 5350
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74HC00 U11
-U 3 1 65AF326B
 P 11600 6050
 F 0 "U11" H 11600 6375 50  0000 C CNN
 F 1 "74HC00" H 11600 6284 50  0000 C CNN
 F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 11600 6050 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 11600 6050 50  0001 C CNN
-	3    11600 6050
+	2    11600 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC00 U11
+U 3 1 65AF326B
+P 11600 5350
+F 0 "U11" H 11600 5675 50  0000 C CNN
+F 1 "74HC00" H 11600 5584 50  0000 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 11600 5350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 11600 5350 50  0001 C CNN
+	3    11600 5350
 	1    0    0    -1  
 $EndComp
 Connection ~ 11300 6150
 $Comp
 L 74xx:74HC00 U11
 U 4 1 65AF4691
-P 11600 7050
-F 0 "U11" H 11600 7375 50  0000 C CNN
-F 1 "74HC00" H 11600 7284 50  0000 C CNN
-F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 11600 7050 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 11600 7050 50  0001 C CNN
-	4    11600 7050
+P 11600 4350
+F 0 "U11" H 11600 4675 50  0000 C CNN
+F 1 "74HC00" H 11600 4584 50  0000 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 11600 4350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 11600 4350 50  0001 C CNN
+	4    11600 4350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -4072,4 +4036,40 @@ F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 11600 3650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	11300 1050 11300 1750
+$Comp
+L power:GND #PWR0145
+U 1 1 612C9447
+P 6400 6750
+F 0 "#PWR0145" H 6400 6500 50  0001 C CNN
+F 1 "GND" H 6405 6577 50  0000 C CNN
+F 2 "" H 6400 6750 50  0001 C CNN
+F 3 "" H 6400 6750 50  0001 C CNN
+	1    6400 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 6650 6400 6750
+Connection ~ 6400 6650
+$Comp
+L 74xx:74LS08 U13
+U 1 1 5F77F572
+P 12300 6950
+F 0 "U13" H 12300 7275 50  0000 C CNN
+F 1 "74HC08" H 12300 7184 50  0000 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 12300 6950 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 12300 6950 50  0001 C CNN
+	1    12300 6950
+	1    0    0    1   
+$EndComp
+$Comp
+L 74xx:74LS08 U13
+U 4 1 5F77F590
+P 12300 6150
+F 0 "U13" H 12300 6475 50  0000 C CNN
+F 1 "74HC08" H 12300 6384 50  0000 C CNN
+F 2 "Package_SO:SO-14_5.3x10.2mm_P1.27mm" H 12300 6150 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 12300 6150 50  0001 C CNN
+	4    12300 6150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
