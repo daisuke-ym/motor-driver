@@ -36,21 +36,25 @@ int sensorW, sensorL;
 //   MSB           LSB
 //   0 0 0 0 上 下 左 右
 uint8_t PS_ASL = 0, PS_ASR = 0;
+uint8_t PS_ASL0 = 0, PS_ASR0 = 0;
 
 // デジタルボタン（左）の状態を示す変数
 //   MSB           LSB
 //   0 0 0 0 上 下 左 右
 uint8_t PS_DBL = 0;
+uint8_t PS_DBL0 = 0;
 
 // デジタルボタン（右）の状態を示す変数
 //   MSB           LSB
 //   0 0 0 0 三角 バツ 四角 丸
 uint8_t PS_DBR = 0;
+uint8_t PS_DBR0 = 0;
 
 // L1, L2, L3, R1, R2, R3ボタンの状態を示す変数
 //   MSB               LSB
 //   0 L1 L2 L3 0 R1 R2 R3
 uint8_t PS_LR = 0;
+uint8_t PS_LR0 = 0;
 
 // SELECT, START ボタンの状態を示す変数
 //   MSB                  LSB
@@ -58,7 +62,7 @@ uint8_t PS_LR = 0;
 uint8_t PS_SLST = 0;
 
 // モータを速度制御するための PWM の段階値
-uint8_t PWM[] = {100 * 255 / 100, 50 * 255 / 100, 20 * 255 / 100};
+uint8_t PWM[] = {255, 255 * 0.5, 255 * 0.2};
 uint8_t PWMRank = sizeof(PWM) / sizeof(uint8_t); // PWM[] 配列の要素数
 uint8_t PWMIndex = 0; // 現在どの段階にいるか
 
@@ -86,74 +90,134 @@ void setup() {
   SV5.attach(_SV5);
   SV6.attach(_SV6);
 
-  LED(1, LED_RED);
-  //LED(2, LED_CYAN);
-  //analogOut(1, CW, 50);
-  //digitalOut(2, CCW);
-  //SV1.write(0);
+  Usb.Task();
+  LED(1, LED_RED); // コントローラの接続状態を表示する
+  LED(2, LED_RED); // PWM のデューティ比を表示する
 }
 
 // ----------------------------------------------------------------------
 void loop() {
-  //sensorW = readSensorW();
-  //sensorL = readSensorL();
-  //delay(500);
-
   // コントローラの状態を読み取る
   readPS3(); // START ボタンで PWM の値を変更する処理はこの中に書いてある
 
   // 左スティック
-  switch (PS_ASL) {
-    case 0x08:
-      Serial.println("MECH_FW");
-      mechanum(MECH_FW, PWM[PWMIndex]);
-      break;
-    case 0x04:
-      Serial.println("MECH_BW");
-      mechanum(MECH_BW, PWM[PWMIndex]);
-      break;
-    case 0x02:
-      Serial.println("MECH_LL");
-      mechanum(MECH_LL, PWM[PWMIndex]);
-      break;
-    case 0x01:
-      Serial.println("MECH_RR");
-      mechanum(MECH_RR, PWM[PWMIndex]);
-      break;
-    case 0b00001010:
-      Serial.println("MECHA_FL");
-      mechanum(MECH_FL, PWM[PWMIndex]);
-      break;
-    case 0b00001001:
-      Serial.println("MECHA_FR");
-      mechanum(MECH_FR, PWM[PWMIndex]);
-      break;
-    case 0b00000110:
-      Serial.println("MECHA_BL");
-      mechanum(MECH_BL, PWM[PWMIndex]);
-      break;
-    case 0b00000101:
-      Serial.println("MECHA_BR");
-      mechanum(MECH_BR, PWM[PWMIndex]);
-      break;
-    case 0x00:
-    default:
-      mechanum(MECH_STOP, PWM[PWMIndex]);
+  if (PS_ASL != PS_ASL0) { // スティックの操作状態が変わった時だけ機器の制御信号を出す
+    switch (PS_ASL) {
+      case 0x08:
+        mechanum(MECHA_FW, PWM[PWMIndex]);
+        break;
+      case 0x04:
+        mechanum(MECHA_BW, PWM[PWMIndex]);
+        break;
+      case 0x02:
+        mechanum(MECHA_LL, PWM[PWMIndex]);
+        break;
+      case 0x01:
+        mechanum(MECHA_RR, PWM[PWMIndex]);
+        break;
+      case 0b00001010:
+        mechanum(MECHA_FL, PWM[PWMIndex]);
+        break;
+      case 0b00001001:
+        mechanum(MECHA_FR, PWM[PWMIndex]);
+        break;
+      case 0b00000110:
+        mechanum(MECHA_BL, PWM[PWMIndex]);
+        break;
+      case 0b00000101:
+        mechanum(MECHA_BR, PWM[PWMIndex]);
+        break;
+      case 0x00:
+      //default:
+        mechanum(MECHA_STOP, PWM[PWMIndex]);
+    }
   }
+  
   // 右スティック
-  switch (PS_ASR) {
-    case 0x02:
-      Serial.println("MECH_TL");
-      mechanum(MECH_TL, PWM[PWMIndex]);
-      break;
-    case 0x01:
-      Serial.println("MECH_TR");
-      mechanum(MECH_TR, PWM[PWMIndex]);
-      break;
-    case 0x00:
-    default:
-      mechanum(MECH_STOP, PWM[PWMIndex]);
+  if (PS_ASR != PS_ASR0) {
+    switch (PS_ASR) {
+      case 0x02:
+        mechanum(MECHA_TL, PWM[PWMIndex]);
+        break;
+      case 0x01:
+        mechanum(MECHA_TR, PWM[PWMIndex]);
+        break;
+      case 0x00:
+      //default:
+        mechanum(MECHA_STOP, PWM[PWMIndex]);
+    }
   }
+  
+  // 左デジタルボタン（上下左右）
+  if (PS_DBL != PS_DBL0)  {
+    switch (PS_DBL) {
+      case 0x08: // 上ボタン
+        digitalOut(1, CW);
+        break;
+      case 0x02: // 下ボタン
+        digitalOut(1, CCW);
+        break;
+      case 0x04: // 左ボタン
+        digitalOut(2, CW);
+        break;
+      case 0x01: // 右ボタン
+        digitalOut(2, CCW);
+        break;
+      case 0x00:
+        digitalOut(1, M_STOP);
+        digitalOut(2, M_STOP);
+    }
+  }
+
+  // 右デジタルボタン（図形ボタン）
+  if (PS_DBR != PS_DBR0)  {
+    switch (PS_DBR) {
+      case 0x08: // △ボタン
+        digitalOut(3, CW);
+        break;
+      case 0x04: // 四角ボタン
+        digitalOut(3, CCW);
+        break;
+      case 0x02: // X ボタン
+        digitalOut(4, CW);
+        break;
+      case 0x01: // 丸ボタン
+        digitalOut(4, CCW);
+        break;
+      case 0x00:
+        digitalOut(3, M_STOP);
+        digitalOut(4, M_STOP);
+    }
+  }
+
+  // LRボタン
+  if (PS_LR != PS_LR0) {
+    switch (PS_LR) {
+      case 0x40: // L1
+        if (SVGROUP == 0) SV1.write(0);
+        if (SVGROUP == 1) SV3.write(0);
+        break;
+      case 0x04: // R1
+        if (SVGROUP == 0) SV1.write(180);
+        if (SVGROUP == 1) SV3.write(180);
+        break;
+      case 0x20: // L2
+        if (SVGROUP == 0) SV2.write(0);
+        if (SVGROUP == 1) SV4.write(0);
+        break;
+      case 0x02: // R2
+        if (SVGROUP == 0) SV2.write(180);
+        if (SVGROUP == 1) SV4.write(180);
+        break;
+    }
+  }
+
+  // コントローラの状態を記憶
+  PS_ASL0 = PS_ASL;
+  PS_ASR0 = PS_ASR;
+  PS_DBL0 = PS_DBL;
+  PS_DBR0 = PS_DBR;
+  PS_LR0 = PS_LR;
 }
 
 // ----------------------------------------------------------------------
@@ -163,7 +227,15 @@ void readPS3() {
   Usb.Task();
 
   if (PS3.PS3Connected || PS3.PS3NavigationConnected) {
-    LED(1, LED_GREEN);
+    // サーボグループにより LED1 の色を変える
+    switch (SVGROUP) {
+      case 0:
+        LED(1, LED_CYAN);
+        break;
+      case 1:
+        LED(1, LED_MAGENTA);
+        break;
+    }
     // アナログスティックの状態を読み取る
     //   中立:127  上・左limit:0  下・右limit:255
     //   なので，127を引いて 上・左limit:-127  下・右limit:127 として扱う
@@ -232,6 +304,17 @@ void readPS3() {
       if (PWMIndex >= PWMRank) {
         PWMIndex = 0;
       }
+      switch (PWMIndex) {
+        case 0:
+          LED(2, LED_RED);
+          break;
+        case 1:
+          LED(2, LED_GREEN);
+          break;
+        case 2:
+          LED(2, LED_BLUE);
+          break;
+      }
 #if DEBUGLEVEL > 5
       Serial.print("DUTY: ");
       Serial.println(PWM[PWMIndex]);
@@ -248,16 +331,15 @@ void readPS3() {
       Serial.println(SVGROUP);
 #endif
     }
-    /*
-    // SELECT, START ボタンの状態を読み取る
-    PS3.getButtonPress(SELECT) ? PS_SLST != 0x02 : PS_SLST &= ~0x02;
-    PS3.getButtonPress(START)  ? PS_SLST != 0x01 : PS_SLST &= ~0x01;
-#if DEBUGLEVEL > 5
-    if (PS_SLST != 0) {
-      Serial.print("PS_SLST: ");
-      Serial.println(PS_SLST, BIN);
-    }
-#endif
-    */
+  }
+
+  // コントローラの接続が切れた時
+  if (!PS3.PS3Connected) {
+    LED(1, LED_RED);
+    mechanum(MECHA_STOP, 0);
+    digitalOut(1, M_STOP);
+    digitalOut(2, M_STOP);
+    digitalOut(3, M_STOP);
+    digitalOut(4, M_STOP);
   }
 }

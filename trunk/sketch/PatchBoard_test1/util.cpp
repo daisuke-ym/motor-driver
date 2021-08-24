@@ -50,7 +50,7 @@ void LED(int n, enum ledcolor color) {
     case LED_BLUE:
       digitalWrite(red, LOW);
       digitalWrite(green, LOW);
-      digitalWrite(blue, LOW);
+      digitalWrite(blue, HIGH);
       break;
     case LED_YELLOW:
       digitalWrite(red, HIGH);
@@ -230,6 +230,7 @@ void digitalOut(int ch, int dir) {
       inar &= ~_BV(inap); //digitalWrite(ina, LOW);
       inbr |=  _BV(inbp); //digitalWrite(inb, HIGH);
       break;
+    case M_STOP:
     default:
       inar &= _BV(inap); //digitalWrite(ina, LOW);
       inbr &= _BV(inbp); //digitalWrite(inb, LOW);
@@ -316,63 +317,71 @@ void mechanum(enum mechanumdir dir, uint8_t speed) {
   // A3:左後輪  右後輪:A4
   
   switch (dir) {
-    case MECH_STOP:
+    case MECHA_STOP:
       analogOut(1, CW, 0);
       analogOut(2, CW, 0);
       analogOut(3, CW, 0);
       analogOut(4, CW, 0);
       break;
-    case MECH_FW: // 前進
+    case MECHA_FW: // 前進
       analogOut(1, CW, speed);
       analogOut(2, CW, speed);
       analogOut(3, CW, speed);
       analogOut(4, CW, speed);
       break;
-    case MECH_BW: // 後退
+    case MECHA_BW: // 後退
       analogOut(1, CCW, speed);
       analogOut(2, CCW, speed);
       analogOut(3, CCW, speed);
       analogOut(4, CCW, speed);
       break;
-    case MECH_LL: // 左行き
+    case MECHA_LL: // 左行き
       analogOut(1, CW, speed);
       analogOut(2, CCW, speed);
       analogOut(3, CW, speed);
       analogOut(4, CCW, speed);
-    case MECH_RR: // 右行き
+      break;
+    case MECHA_RR: // 右行き
       analogOut(1, CCW, speed);
       analogOut(2, CW, speed);
       analogOut(3, CCW, speed);
       analogOut(4, CW, speed);
-    case MECH_TL: // 左旋回
+      break;
+    case MECHA_TL: // 左旋回
       analogOut(1, CW, speed);
       analogOut(2, CCW, speed);
       analogOut(3, CCW, speed);
       analogOut(4, CW, speed);
-    case MECH_TR: // 右旋回
+      break;
+    case MECHA_TR: // 右旋回
       analogOut(1, CCW, speed);
       analogOut(2, CW, speed);
       analogOut(3, CW, speed);
       analogOut(4, CCW, speed);
-    case MECH_FL: // 左斜め前
+      break;
+    case MECHA_FL: // 左斜め前
       analogOut(1, CW, speed);
       analogOut(2, CW, 0);
       analogOut(3, CW, speed);
       analogOut(4, CW, 0);
-    case MECH_FR: // 右斜め前
+      break;
+    case MECHA_FR: // 右斜め前
       analogOut(1, CW, 0);
       analogOut(2, CW, speed);
       analogOut(3, CW, 0);
       analogOut(4, CW, speed);
-    case MECH_BL: // 左斜め後ろ
+      break;
+    case MECHA_BL: // 左斜め後ろ
       analogOut(1, CCW, 0);
       analogOut(2, CCW, speed);
       analogOut(3, CCW, 0);
       analogOut(4, CCW, speed);
-    case MECH_BR: // 右斜め後ろ
+      break;
+    case MECHA_BR: // 右斜め後ろ
       analogOut(1, CCW, speed);
       analogOut(2, CCW, 0);
       analogOut(3, CCW, speed);
       analogOut(4, CCW, 0);
+      break;
   }
 }
