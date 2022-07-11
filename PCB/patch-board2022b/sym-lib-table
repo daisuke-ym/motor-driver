@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name patch-board2022a-rescue)(type Legacy)(uri ${KIPRJMOD}/patch-board2022a-rescue.lib)(options "")(descr ""))
+  (lib (name patch-board2022b-rescue)(type Legacy)(uri ${KIPRJMOD}/patch-board2022b-rescue.lib)(options "")(descr ""))
+)
