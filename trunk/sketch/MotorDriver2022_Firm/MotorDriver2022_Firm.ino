@@ -36,8 +36,8 @@ const uint8_t MB = 2; // PWM(High-side)
 const uint8_t MC = 4; // Low-side
 const uint8_t MD = 3; // Low-side
 
-const uint8_t IN1 = 10;
-const uint8_t IN2 = 8;
+const uint8_t IN1 = A0; // D10
+const uint8_t IN2 = A2; // D8
 const uint8_t INM = 9; // モード切替（LOW:ブレーキ，High:フリー）
 
 const uint8_t TV = 30; // 不感帯
