@@ -377,6 +377,10 @@ void readPS4() {
   if (!PS4.connected()) {
     LED(0, LED_RED);
     mechanum(MECHA_STOP, 0);
+    analogOut(5, CW, 0);
+    analogOut(6, CW, 0);
+    analogOut(7, CW, 0);
+    analogOut(8, CW, 0);
     digitalOut(1, M_STOP);
     digitalOut(2, M_STOP);
     digitalOut(3, M_STOP);
