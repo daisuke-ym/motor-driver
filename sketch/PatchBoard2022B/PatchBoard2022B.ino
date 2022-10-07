@@ -43,13 +43,65 @@ void setup() {
   initSwitch();
   initMotor();
   SV1.attach(_SV1);
+  SV1.write(0);
 
   LED(0, LED_RED);
-    LED(1, LED_BLUE);
+  LED(1, LED_BLACK);
 }
 
 // ----------------------------------------------------------------------
 void loop() {
+  while (digitalRead(SW11) == HIGH) {
+    // SW11（白色）が押されるまで待つ
+  }
+  LED(1, LED_GREEN);
+  // 走り出すまでの待機時間
+  delay(1000);
+  // ここから走り出す
+  mechanum(MECHA_LL, 255);
+  delay(2500);
+  mechanum(MECHA_FL, 255);
+  delay(800);
+  SV1.write(90);
+  while (digitalRead(SS_FL_PIN) == HIGH) {
+    LED(1, LED_CYAN);
+    mechanum(MECHA_LL, 255);
+  }
+  LED(1, LED_MAGENTA);
+  mechanum(MECHA_TL, 255);
+  delay(300);
+  while (digitalRead(SS_CENTER_PIN) == HIGH) {
+    mechanum(MECHA_FW, 255);
+  }
+  LED(1, LED_BLUE);
+  mechanum(MECHA_STOP, 0);
+  SV1.write(0);
+  delay(500);
+  mechanum(MECHA_BW, 255);
+  delay(500);
+  mechanum(MECHA_TR, 255);
+  delay(400);
+  while (digitalRead(SS_RR_PIN) == HIGH && digitalRead(SS_RL_PIN) == HIGH) {
+    mechanum(MECHA_BW, 255);
+  }
+  delay(1000);
+  LED(1, LED_YELLOW);
+  while (digitalRead(SS_FR_PIN) == HIGH) {
+    mechanum(MECHA_FW, 255);
+  }
+  SV1.write(90);
+  delay(500);
+  while (digitalRead(SS_RR_PIN) == HIGH && digitalRead(SS_RL_PIN) == HIGH) {
+    mechanum(MECHA_BW, 255);
+  }
+  delay(1000);
+  while (1) {
+    mechanum(MECHA_STOP, 0);
+  }
+}
+
+// ----------------------------------------------------------------------
+void device_check_proc() {
   if (digitalRead(SW11) == LOW) {
     SV1_ANGLE++;
     if (SV1_ANGLE > SV1_AMAX) {
