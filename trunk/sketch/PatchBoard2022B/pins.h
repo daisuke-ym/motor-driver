@@ -77,12 +77,12 @@ const uint8_t _SV8 = 40;
 
 // ----------------------------------------------------------------------
 // センサ用ピン割り当て
-const uint8_t S1 = 27;
-const uint8_t S2 = 29;
-const uint8_t S3 = 31;
-const uint8_t S4 = 33;
-const uint8_t S5 = 35;
-const uint8_t S6 = 37;
+const uint8_t S1 = 27, SS_FR_PIN = 27;
+const uint8_t S2 = 29, SS_CENTER_PIN = 29;
+const uint8_t S3 = 31, SS_BR_PIN = 31;
+const uint8_t S4 = 33, SS_RR_PIN = 33;
+const uint8_t S5 = 35, SS_RL_PIN = 35;
+const uint8_t S6 = 37, SS_FL_PIN = 37;
 const uint8_t S7 = 39;
 const uint8_t S8 = 41;
 
