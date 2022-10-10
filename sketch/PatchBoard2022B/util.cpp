@@ -12,6 +12,17 @@
 #include "pins.h"
 
 // ----------------------------------------------------------------------
+// メカナムの回転速度を調整する
+/*
+void initMechanum() {
+  MC_FR_RATE = 1.0;  // 前右
+  MC_FL_RATE = 1.0;  // 前左
+  MC_RR_RATE = 1.0;  // 後右
+  MC_RL_RATE = 1.0;  // 後左
+}
+*/
+
+// ----------------------------------------------------------------------
 // センサ接続ピンを初期化する関数
 void initSensor() {
   pinMode(S1, INPUT_PULLUP);
@@ -155,63 +166,63 @@ void mechanum(enum mechanumdir dir, uint8_t speed) {
       analogOut(4, CW, 0);
       break;
     case MECHA_FW: // 前進
-      analogOut(1, CW, speed);
-      analogOut(2, CW, speed);
-      analogOut(3, CW, speed);
-      analogOut(4, CW, speed);
+      analogOut(1, CW, speed * MC_FR_RATE);
+      analogOut(2, CW, speed * MC_FL_RATE);
+      analogOut(3, CW, speed * MC_RL_RATE);
+      analogOut(4, CW, speed * MC_RR_RATE);
       break;
     case MECHA_BW: // 後退
-      analogOut(1, CCW, speed);
-      analogOut(2, CCW, speed);
-      analogOut(3, CCW, speed);
-      analogOut(4, CCW, speed);
+      analogOut(1, CCW, speed * MC_FR_RATE);
+      analogOut(2, CCW, speed * MC_FL_RATE);
+      analogOut(3, CCW, speed * MC_RL_RATE);
+      analogOut(4, CCW, speed * MC_RR_RATE);
       break;
     case MECHA_LL: // 左行き
-      analogOut(1, CW, speed);
-      analogOut(2, CCW, speed);
-      analogOut(3, CW, speed);
-      analogOut(4, CCW, speed);
+      analogOut(1, CW,  speed * MC_FR_RATE);
+      analogOut(2, CCW, speed * MC_FL_RATE);
+      analogOut(3, CW,  speed * MC_RL_RATE);
+      analogOut(4, CCW, speed * MC_RR_RATE);
       break;
     case MECHA_RR: // 右行き
-      analogOut(1, CCW, speed);
-      analogOut(2, CW, speed);
-      analogOut(3, CCW, speed);
-      analogOut(4, CW, speed);
+      analogOut(1, CCW, speed * MC_FR_RATE);
+      analogOut(2, CW,  speed * MC_FL_RATE);
+      analogOut(3, CCW, speed * MC_RL_RATE);
+      analogOut(4, CW,  speed * MC_RR_RATE);
       break;
     case MECHA_TL: // 左旋回
-      analogOut(1, CW, speed);
-      analogOut(2, CCW, speed);
-      analogOut(3, CCW, speed);
-      analogOut(4, CW, speed);
+      analogOut(1, CW,  speed * MC_FR_RATE);
+      analogOut(2, CCW, speed * MC_FL_RATE);
+      analogOut(3, CCW, speed * MC_RL_RATE);
+      analogOut(4, CW,  speed * MC_RR_RATE);
       break;
     case MECHA_TR: // 右旋回
-      analogOut(1, CCW, speed);
-      analogOut(2, CW, speed);
-      analogOut(3, CW, speed);
-      analogOut(4, CCW, speed);
+      analogOut(1, CCW, speed * MC_FR_RATE);
+      analogOut(2, CW,  speed * MC_FL_RATE);
+      analogOut(3, CW,  speed * MC_RL_RATE);
+      analogOut(4, CCW, speed * MC_RR_RATE);
       break;
     case MECHA_FL: // 左斜め前
-      analogOut(1, CW, speed);
+      analogOut(1, CW, speed * MC_FR_RATE);
       analogOut(2, CW, 0);
-      analogOut(3, CW, speed);
+      analogOut(3, CW, speed * MC_RL_RATE);
       analogOut(4, CW, 0);
       break;
     case MECHA_FR: // 右斜め前
       analogOut(1, CW, 0);
-      analogOut(2, CW, speed);
+      analogOut(2, CW, speed * MC_FL_RATE);
       analogOut(3, CW, 0);
-      analogOut(4, CW, speed);
+      analogOut(4, CW, speed * MC_RR_RATE);
       break;
     case MECHA_BL: // 左斜め後ろ
       analogOut(1, CCW, 0);
-      analogOut(2, CCW, speed);
+      analogOut(2, CCW, speed * MC_FL_RATE);
       analogOut(3, CCW, 0);
-      analogOut(4, CCW, speed);
+      analogOut(4, CCW, speed * MC_RR_RATE);
       break;
     case MECHA_BR: // 右斜め後ろ
-      analogOut(1, CCW, speed);
+      analogOut(1, CCW, speed * MC_FR_RATE);
       analogOut(2, CCW, 0);
-      analogOut(3, CCW, speed);
+      analogOut(3, CCW, speed * MC_RL_RATE);
       analogOut(4, CCW, 0);
       break;
   }
