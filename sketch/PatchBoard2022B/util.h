@@ -15,11 +15,11 @@
 #define DETECT 0
 
 // ----------------------------------------------------------------------
-// メカナムの回転速度を調整するパラメータ
-const double MC_FR_RATE = 1.0;  // 前右
-const double MC_FL_RATE = 1.0;  // 前左
-const double MC_RR_RATE = 1.0;  // 後右
-const double MC_RL_RATE = 1.0;  // 後左
+// メカナムの回転速度を調整するパラメータの宣言のみ（初期化は util.cpp で行う）
+extern double MC_FR_RATE;  // 前右
+extern double MC_FL_RATE;  // 前左
+extern double MC_RR_RATE;  // 後右
+extern double MC_RL_RATE;  // 後左
 
 // ----------------------------------------------------------------------
 // センサの定義
