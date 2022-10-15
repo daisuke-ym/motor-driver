@@ -56,12 +56,14 @@ void setup() {
 
 // ----------------------------------------------------------------------
 void loop() {
-  /*
   // メカナムの調整用
-  while (1) {
-    TrimMechanum();
+  while (digitalRead(SW12) == LOW) {
+    LED(0, LED_YELLOW);
+    Serial.println("trim mechanum mode");
+    while (1) {
+      TrimMechanum();
+    }
   }
-  */
 
   while (digitalRead(SW11) == HIGH) {
     // SW11（白色）が押されるまで待つ
@@ -311,7 +313,10 @@ void TrimMechanum() {
       mechanum(MECHA_STOP, 0);
       Serial.println(rxbuf.c_str());
       sscanf(rxbuf.c_str(), "%d %d %d %d", &fr, &fl, &rl, &rr);
-      
+      MC_FR_RATE = fr / 100.0;
+      MC_FL_RATE = fl / 100.0;
+      MC_RL_RATE = rl / 100.0;
+      MC_RR_RATE = rr / 100.0;
       Serial.print(fr);
       Serial.print("  ");
       Serial.print(fl);
