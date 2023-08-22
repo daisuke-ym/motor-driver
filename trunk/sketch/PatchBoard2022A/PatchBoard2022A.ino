@@ -109,6 +109,7 @@ void setup() {
 
 // ----------------------------------------------------------------------
 void loop() {
+  // センサーの状態を読みとる
   //readSensor();
   // コントローラの状態を読み取る
   readPS4(); // SHARE ボタンで PWM の値を変更する処理はこの中に書いてある
@@ -162,10 +163,14 @@ void loop() {
   }
   
   // 左デジタルボタン（上下左右）
-  if (PS_DBL != PS_DBL0)  {
+  //if (PS_DBL != PS_DBL0)  {
     switch (PS_DBL) {
       case 0x08: // 上ボタン
-        analogOut(5, CW, PWM[PWMIndex]);
+        if (digitalRead(LS1_PIN) == HIGH) {
+          analogOut(5, CW, PWM[PWMIndex]);
+        } else {
+          analogOut(5, CW, 0);
+        }
         break;
       case 0x04: // 下ボタン
         analogOut(5, CCW, PWM[PWMIndex]);
@@ -181,7 +186,7 @@ void loop() {
       case 0x00:
         analogOut(5, CW, 0);
     }
-  }
+  //}
 
   // 右デジタルボタン（図形ボタン）
   if (PS_DBR != PS_DBR0)  {

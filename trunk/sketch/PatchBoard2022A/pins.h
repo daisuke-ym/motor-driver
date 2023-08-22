@@ -126,6 +126,7 @@ const uint8_t S5 = A12;
 const uint8_t S6 = A13;
 const uint8_t S7 = A14;
 const uint8_t S8 = A15;
+const uint8_t LS1_PIN = S1;
 // レジスタ直接操作用
 #define SSR PORTK
 #define S1P PINK0
