@@ -1,0 +1,8 @@
+{
+    "configuration": "cpu=atmega2560",
+    "board": "arduino:avr:mega",
+    "port": "COM17",
+    "programmer": "arduino:arduinoisp",
+    "sketch": "Robo2023B.ino",
+    "output": "C://temp//Arduino//Robo2023B"
+}
