@@ -1,3 +1,5 @@
 (sym_lib_table
-  (lib (name line-sensor2-rescue)(type Legacy)(uri ${KIPRJMOD}/line-sensor2-rescue.lib)(options "")(descr ""))
+  (version 7)
+  (lib (name "line-sensor2-rescue")(type "Legacy")(uri "${KIPRJMOD}/line-sensor2-rescue.lib")(options "")(descr ""))
+  (lib (name "wall-sensor-rescue")(type "KiCad")(uri "${KIPRJMOD}/wall-sensor-rescue.kicad_sym")(options "")(descr ""))
 )
